@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .hotels-filter__checkbox {
@@ -46,7 +46,7 @@
   width: 19px;
   height: 19px;
   border: 2px solid $white;
-  border-radius: 3px;
+  border-radius: 2px;
   left: -40px;
   cursor: pointer;
 }
@@ -82,4 +82,18 @@
   border: none;
   width: 23px;
   height: 23px;
+}
+
+.hotels-filter__button {
+  color: $white;
+  font-family: $ptsans;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid $white;
+  border-radius: 2px;
+  padding: 8px 35px;
+  cursor: pointer;
 }

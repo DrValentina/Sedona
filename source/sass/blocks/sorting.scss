@@ -1,0 +1,38 @@
+.sorting {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sorting__item--header {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $black;
+}
+
+.sorting__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.sorting__item:first-child {
+  margin-right: 40px;
+}
+
+.sorting__button {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $dark-grey-transparent;
+  text-decoration: none;
+  border-bottom: 1px dotted $blue;
+}
+
+.sorting__button--on {
+  color: $blue;
+  border: none;
+  opacity: 1;
+}

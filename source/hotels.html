@@ -88,25 +88,23 @@
           <fieldset class="hotels-filter__slider slider">
             <legend class="hotels-filter__title">Стоимость в сутки, ₽:</legend>
             <div class="slider__range-filter">
-              <div class="slider__price-controls">
-                <label class="slider__price--min price">
-                от <input class="slider__price" type="text" name="min-price" value="0">
-              </label>
-              <div class="slider__line"></div>
-              <label class="form__price--max price">
-                до <input class="slider__price" type="text" name="max-price" value="3000">
-              </label>
+              <div class="slider__price">
+                <label class="slider__price-label slider__price--min">
+                  от <input class="slider__input" type="text" name="min-price" value="0">
+                </label>
               </div>
-              <div class="slider__range-controls">
-                <div class="slider__scale">
-                  <div class="slider__bar">
-                  </div>
-                </div>
-                <div class="slider__toggle slider__toggle--min" tabindex="0" aria-label="Индикатор управления минимальной стоимостью гостиницы">
-                </div>
-                <div class="slider__toggle slider__toggle--max" tabindex="0" aria-label="Индикатор управления максимальной стоимостью гостиницы">
-                </div>
+              <div class="slider__price">
+                <label class="slider__price-label form__price--max">
+                  до <input class="slider__input" type="text" name="max-price" value="3000">
+                </label>
               </div>
+            </div>
+            <div class="slider__range-controls">
+              <div class="slider__scale">
+                <div class="slider__bar"></div>
+              </div>
+              <div class="slider__toggle slider__toggle--min" tabindex="0" aria-label="Индикатор управления минимальной стоимостью гостиницы"></div>
+              <div class="slider__toggle slider__toggle--max" tabindex="0" aria-label="Индикатор управления максимальной стоимостью гостиницы"></div>
             </div>
           </fieldset>
           <button class="hotels-filter__button" type="submit" name="filter-button">показать</button>
@@ -119,9 +117,9 @@
             <h2 class="visually-hidden">Результат</h2>
             <p class="result__text">Найдено: 3</p>
             <ul class="result__sorting sorting">
-              <li class="sorting__item">Сортировка:</li>
+              <li class="sorting__item sorting__item--header">Сортировка:</li>
               <li class="sorting__item">
-                <a class="sorting__button" href="#">по цене</a>
+                <a class="sorting__button sorting__button--on" href="#">по цене</a>
               </li>
               <li class="sorting__item">
                 <a class="sorting__button" href="#">по типу</a>
@@ -155,24 +153,26 @@
               <img src="img/jpg/amara_resort.jpg" width="135" height="90" alt="Amara Resort & Spa">
             </figure>
             <div class="hotel__info">
-              <h3 class="hotel__title"><a class="hotel-title-link" href="#">Amara Resort & Spa</a></h3>
+              <h3 class="hotel__title">
+                <a class="hotel__title-link" href="#">Amara Resort & Spa</a>
+              </h3>
               <div class="hotel__info-data">
                 <p class="hotel__text">Гостиница</p>
                 <p class="hotel__text"> от 4000 ₽</p>
               </div>
               <div class="hotel__info-links">
                 <a class="hotel__link" href="#">Подробнее</a>
-                <a class="hotel__button" href="#">Забронировать</a>
+                <a class="hotel__link hotel__link--brown" href="#">Забронировать</a>
               </div>
             </div>
-            <div class="hotel__rating rating">
-              <div class="rating__stars">
-                <img class="rating__star" src="img/svg/star.svg" width="19" height="17" alt="Звездочка">
-                <img class="rating__star" src="img/svg/star.svg" width="19" height="17" alt="Звездочка">
-                <img class="rating__star" src="img/svg/star.svg" width="19" height="17" alt="Звездочка">
-                <img class="rating__star" src="img/svg/star.svg" width="19" height="17" alt="Звездочка">
+            <div class="hotel__rating">
+              <div class="hotel__stars">
+                <img class="hotel__stars-img" src="img/svg/star.svg" width="19" height="17" alt="Звездочка">
+                <img class="hotel__stars-img" src="img/svg/star.svg" width="19" height="17" alt="Звездочка">
+                <img class="hotel__stars-img" src="img/svg/star.svg" width="19" height="17" alt="Звездочка">
+                <img class="hotel__stars-img" src="img/svg/star.svg" width="19" height="17" alt="Звездочка">
               </div>
-              <p class="rating__text">Рейтинг: 8,5</p>
+              <p class="hotel__rating-text">Рейтинг: 8,5</p>
             </div>
           </li>
 
@@ -181,23 +181,25 @@
               <img src="img/jpg/desert_quail_inn.jpg" width="135" height="90" alt="Desert Quail Inn">
             </figure>
             <div class="hotel__info">
-              <h3 class="hotel__title"><a class="hotel-title-link" href="#">Desert Quail Inn</a></h3>
+              <h3 class="hotel__title">
+                <a class="hotel__title-link" href="#">Desert Quail Inn</a>
+              </h3>
               <div class="hotel__info-data">
                   <p class="hotel__text">Мотель</p>
                   <p class="hotel__text"> от 3000 ₽</p>
                 </div>
                 <div class="hotel__info-links">
                   <a class="hotel__link" href="#">Подробнее</a>
-                  <a class="hotel__button" href="#">Забронировать</a>
+                  <a class="hotel__link hotel__link--brown" href="#">Забронировать</a>
                 </div>
             </div>
-            <div class="hotel__rating rating">
-              <div class="rating__stars">
-                <img class="rating__star" src="img/svg/star.svg" width="19" height="17" alt="Звездочка">
-                <img class="rating__star" src="img/svg/star.svg" width="19" height="17" alt="Звездочка">
-                <img class="rating__star" src="img/svg/star.svg" width="19" height="17" alt="Звездочка">
+            <div class="hotel__rating">
+              <div class="hotel__stars">
+                <img class="hotel__stars-img" src="img/svg/star.svg" width="19" height="17" alt="Звездочка">
+                <img class="hotel__stars-img" src="img/svg/star.svg" width="19" height="17" alt="Звездочка">
+                <img class="hotel__stars-img" src="img/svg/star.svg" width="19" height="17" alt="Звездочка">
               </div>
-              <p class="rating__text">Рейтинг: 8,9</p>
+              <p class="hotel__rating-text">Рейтинг: 8,9</p>
             </div>
           </li>
 
@@ -206,22 +208,24 @@
               <img src="img/jpg/villas_at_poco_diablo.jpg" width="135" height="90" alt="Villas At Poco Diablo">
             </figure>
             <div class="hotel__info">
-              <h3 class="hotel__title"><a class="hotel-title-link" href="#">Villas At Poco Diablo</a></h3>
+              <h3 class="hotel__title">
+                <a class="hotel__title-link" href="#">Villas At Poco Diablo</a>
+              </h3>
               <div class="hotel__info-data">
                   <p class="hotel__text">Апартаменты</p>
                   <p class="hotel__text"> от 2000 ₽</p>
                 </div>
                 <div class="hotel__info-links">
                   <a class="hotel__link" href="#">Подробнее</a>
-                  <a class="hotel__button" href="#">Забронировать</a>
+                  <a class="hotel__link hotel__link--brown" href="#">Забронировать</a>
                 </div>
             </div>
-            <div class="hotel__rating rating">
-              <div class="rating__stars">
-                <img class="rating__star" src="img/svg/star.svg" width="19" height="17" alt="Звездочка">
-                <img class="rating__star" src="img/svg/star.svg" width="19" height="17" alt="Звездочка">
+            <div class="hotel__rating">
+              <div class="hotel__stars">
+                <img class="hotel__stars-img" src="img/svg/star.svg" width="19" height="17" alt="Звездочка">
+                <img class="hotel__stars-img" src="img/svg/star.svg" width="19" height="17" alt="Звездочка">
               </div>
-              <p class="rating__text">Рейтинг: 9,2</p>
+              <p class="hotel__rating-text">Рейтинг: 9,2</p>
             </div>
           </li>
         </ul>
