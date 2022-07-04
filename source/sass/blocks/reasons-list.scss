@@ -1,0 +1,84 @@
+.reasons-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 35px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reasons-list__item {
+  margin: 0;
+  padding: 0;
+  padding-left: 70px;
+  @media(min-width: $tablet-width) {
+    padding: 0;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    text-align: center;
+    margin-right: 70px;
+  }
+  @media(min-width: $desktop-width) {
+    padding-bottom: 60px;
+    margin-right: 110px;
+  }
+}
+
+.reasons-list__item:last-child {
+  @media(min-width: $tablet-width) {
+    margin-right: 0;
+  }
+}
+
+.reasons-list__item--home {
+  background-image: url("../img/svg/home.svg");
+  background-repeat: no-repeat;
+  background-position: 20px 10px;
+  background-size: 39px 37px;
+  @media(min-width: $tablet-width) {
+    background-position: center 30px;
+    background-size: 75px 72px;
+  }
+}
+
+.reasons-list__item--food {
+  background-image: url("../img/svg/food.svg");
+  background-repeat: no-repeat;
+  background-position: 20px 12px;
+  background-size: 40px 35px;
+  @media(min-width: $tablet-width) {
+    background-position: center 30px;
+    background-size: 76px 68px;
+  }
+}
+
+.reasons-list__item--present {
+  background-image: url("../img/svg/present.svg");
+  background-repeat: no-repeat;
+  background-position: 20px 8px;
+  background-size: 32px 38px;
+  @media(min-width: $tablet-width) {
+    background-position: center 30px;
+    background-size: 64px 75px;
+  }
+}
+
+.reasons-list__item-title {
+  font-size: 18px;
+  margin: 20px 0;
+  @media(min-width: $tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.reasons-list__item-text {
+  max-width: 230px;
+  line-height: 21px;
+  @media(min-width: $tablet-width) {
+    max-width: 193px;
+  }
+  @media(min-width: $desktop-width) {
+    max-width: 280px;
+  }
+}

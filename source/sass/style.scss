@@ -1,0 +1,36 @@
+//Global
+
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/normalize.scss";
+@import "global/global.scss";
+
+//Blocks
+@import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/footer.scss";
+@import "blocks/tagline.scss";
+@import "blocks/section-header.scss";
+
+//Index
+@import "blocks/tagline-index.scss";
+@import "blocks/reasons.scss";
+@import "blocks/reasons-block.scss";
+@import "blocks/reasons-list.scss";
+@import "blocks/modal.scss";
+@import "blocks/map.scss";
+
+//Catalog
+@import "blocks/gallery.scss";
+@import "blocks/video.scss";
+
+//Form
+@import "blocks/main-reviews.scss";
+@import "blocks/reviews.scss";
+@import "blocks/form-review.scss";
+@import "blocks/error-pop-up.scss";
+@import "blocks/right-pop-up.scss";
+
+//Hotels
+@import "blocks/hotels-filter.scss";
+@import "blocks/slider.scss";

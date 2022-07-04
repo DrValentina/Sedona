@@ -1,0 +1,33 @@
+.tagline-index {
+  background-image: url("../img/jpg/back-desktop_index.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  padding-top: 90px;
+  padding-bottom: 85px;
+  @media(min-width: $tablet-width) {
+    padding-top: 78px;
+    padding-bottom: 90px;
+  }
+}
+
+.tagline-index__img {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.tagline-index__img-text {
+  width: 282px;
+  height: 214px;
+  @media(min-width: $tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
+  @media(min-width: $desktop-width) {
+    width: 460px;
+    height: 350px;
+  }
+}

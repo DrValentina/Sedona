@@ -1,0 +1,544 @@
+//Global
+
+.form-review {
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  text-align: center;
+  border: none;
+  border-top: 1px solid $extra-light-grey;
+  @media(min-width: $tablet-width) {
+    margin: 0 auto;
+    border: none;
+  }
+  @media(min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.form-review__title {
+  max-width: 280px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $black;
+  margin: 0 auto;
+  background-color: $white;
+  @media(min-width: $tablet-width) {
+    max-width: 310px;
+    font-size: 21px;
+  }
+}
+
+.form-review__title--line {
+  position: relative;
+}
+
+.form-review__title--line::before {
+  @media(min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: 648px;
+    height: 1px;
+    background-color: $extra-light-grey;
+    top: 50%;
+    z-index: -1;
+    left: -170px;
+  }
+  @media(min-width: $desktop-width) {
+    width: 960px;
+    left: -325px;
+  }
+}
+
+.form-review__list {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0;
+  @media(min-width: $tablet-width) {
+    width: auto;
+    padding: 0;
+  }
+  @media(min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.form-review__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  @media(min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.form-review__label {
+  position: relative;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $black;
+  text-transform: none;
+  left: 20%;
+  cursor: pointer;
+}
+
+//Full Name
+
+.form-review__full-name {
+  @media(min-width: $tablet-width) {
+    order: 2;
+    border-left: 1px solid $extra-light-grey;
+    margin-left: 0;
+    padding-left: 50px;
+    flex-shrink: 1;
+  }
+  @media(min-width: $desktop-width) {
+    width: 42%;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    padding-left: 80px;
+  }
+}
+
+.form-review__full-name h2 {
+  @media(min-width: $tablet-width) {
+    text-align: left;
+  }
+}
+
+.form-review__list--full-name {
+  @media(min-width: $tablet-width) {
+    margin-top: 60px;
+  }
+}
+
+.form-review__label--text {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: $dark-grey;
+  margin-right: 13px;
+  align-self: center;
+  text-align: left;
+}
+
+.form-review__input--text {
+  display: flex;
+  width: 100%;
+  height: 58px;
+  padding-left: 22px;
+  background-color: $light-beige;
+  border: none;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.form-review__input--text:hover {
+  background-color: $extra-light-grey;
+}
+
+.form-review__input--text:active,
+.form-review__input--text:focus {
+  background-color: $white;
+  outline-color: $extra-light-grey;
+}
+
+.form-review__input--full-name {
+  @media(min-width: $desktop-width) {
+    display: block;
+    width: 100%;
+  }
+}
+
+.form-review__input--text::placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $black;
+}
+
+//Contact
+
+.form-review__contact {
+  @media(min-width: $tablet-width) {
+    width: 100%;
+    order: 3;
+    margin-top: 72px;
+  }
+}
+
+.form-review__list--contact {
+  @media(min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 72px;
+    margin-bottom: 25px;
+  }
+}
+
+.form-review__item--contact {
+  @media(min-width: $tablet-width) {
+    align-self: center;
+  }
+}
+
+.form-review__label--tel {
+  position: relative;
+  margin-right: 0;
+}
+
+.form-review__label--tel::before {
+  content: "";
+  position: absolute;
+  background-color: $form-svg-grey;
+  background-image: url("../img/svg/phone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 58px;
+  height: 60px;
+  right: 0;
+  top: 26px;
+  @media(min-width: $tablet-width) {
+    right: 0;
+  }
+  @media(min-width: $desktop-width) {
+    top: 0;
+  }
+}
+
+.form-review__input--text-tel {
+  display: block;
+  width: 258px;
+  @media(min-width: $tablet-width) {
+    width: 626px;
+  }
+  @media(min-width: $desktop-width) {
+    display: inline;
+    width: 272px;
+    margin-left: 18px;
+  }
+}
+
+.form-review__label--mail {
+  position: relative;
+  margin-right: 0;
+}
+
+.form-review__label--mail::before {
+  content: "";
+  position: absolute;
+  background-color: $form-svg-grey;
+  background-image: url("../img/svg/mail.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 58px;
+  height: 60px;
+  right: 0;
+  top: 26px;
+  @media(min-width: $tablet-width) {
+    right: 0;
+  }
+  @media(min-width: $desktop-width) {
+    top: 0;
+  }
+}
+
+.form-review__input--text-mail {
+  display: block;
+  width: 258px;
+  @media(min-width: $tablet-width) {
+    width: 626px;
+  }
+  @media(min-width: $desktop-width) {
+    display: inline;
+    width: 272px;
+    margin-left: 18px;
+  }
+}
+
+//Impression
+
+.form-review__impression {
+  @media(min-width: $tablet-width) {
+    order: 1;
+    margin-right: 0;
+    padding-right: 50px;
+  }
+  @media(min-width: $desktop-width) {
+    margin: 0;
+    margin-right: 130px;
+    padding: 0;
+    padding-left: 72px;
+    flex-shrink: 1;
+  }
+}
+
+.form-review__list--radio {
+  margin-top: 37px;
+  @media(min-width: $tablet-width) {
+    justify-content: flex-end;
+    margin-top: 73px;
+  }
+}
+
+.form-review__item--radio:not(:last-child) {
+  margin-bottom: 40px;
+  @media(min-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
+}
+
+.form-review__label--radio {
+  left: 25%;
+  @media(min-width: $desktop-width) {
+    left: 0;
+  }
+}
+
+.form-review__input--radio + .form-review__label--radio::before {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background-color: $light-beige;
+  border: 1px solid $light-beige;
+  border-radius: 50%;
+  top: -12px;
+  left: -70px;
+}
+
+.form-review__input--radio + .form-review__label--radio:hover::before {
+  background-color: $extra-light-grey;
+  border: 1px solid $extra-light-grey;
+}
+
+.form-review__input--radio + .form-review__label--radio:active::before {
+  background-color: $grey-form-down;
+  border: 1px solid $grey-form-down;
+}
+
+.form-review__input--radio:checked + .form-review__label--radio::after{
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: $dark-grey;
+  border: 1px solid $dark-grey;
+  border-radius: 50%;
+  left: -55px;
+  top: 3px;
+}
+
+.form-review__input--radio:checked + .form-review__label--radio:active::after{
+  opacity: 0.3;
+}
+
+//Attrection
+
+.form-review__attrection {
+  @media(min-width: $tablet-width) {
+    order: 4;
+  }
+  @media(min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.form-review__list--checkbox {
+  margin-top: 37px;
+  @media(min-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 120px;
+    margin: 0;
+    margin-top: 60px;
+    padding: 0;
+  }
+  @media(min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.form-review__item--checkbox {
+  @media(min-width: $tablet-width) {
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+.form-review__item--checkbox:not(:last-child) {
+  margin-bottom: 40px;
+  @media(min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.form-review__label--checkbox {
+  left: 25%;
+}
+
+.form-review__input--checkbox + .form-review__label--checkbox::before {
+  content: "";
+  position: absolute;
+  width:46px;
+  height: 46px;
+  background-color: $light-beige;
+  border: 1px solid $light-beige;
+  top: -12px;
+  left: -70px;
+}
+
+.form-review__input--checkbox + .form-review__label--checkbox:hover::before {
+  background-color: $extra-light-grey;
+  border: 1px solid $extra-light-grey;
+}
+
+.form-review__input--checkbox + .form-review__label--checkbox:active::before {
+  background-color: $grey-form-down;
+  border: 1px solid $grey-form-down;
+}
+
+.form-review__input--checkbox:checked + .form-review__label--checkbox:after {
+  content: "";
+  position: absolute;
+  width:20px;
+  height: 14px;
+  border: 4px solid $dark-grey;
+  border-bottom: 0px;
+  border-left: 0px;
+  top: -12px;
+  left: -70px;
+  transform: rotate(135deg);
+  top: 0;
+  left: -58px;
+}
+
+.form-review__input--checkbox + .form-review__label--checkbox:active::after {
+  opacity: 0.3;
+}
+
+//Emotions
+.form-review__emotions {
+  @media(min-width: $tablet-width) {
+    width: 100%;
+    order: 5;
+    margin-top: 65px;
+  }
+}
+
+.form-review__textarea {
+  display: block;
+  border: none;
+  width: 238px;
+  height: 135px;
+  background-color: $light-beige;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: none;
+  color: $black;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 13px 21px;
+  @media(min-width: $tablet-width) {
+    width: 604px;
+    height: 160px;
+    margin-top: 55px;
+  }
+  @media(min-width: $desktop-width) {
+    width: 918px;
+  }
+}
+
+.form-review__textarea:hover {
+  background-color: $extra-light-grey;
+}
+
+.form-review__textarea:active,
+.form-review__textarea:focus {
+  background-color: $white;
+  outline-color: $extra-light-grey;
+}
+
+.form-review__textarea::placeholder {
+  color: $black;
+}
+
+//Form footer
+
+.form-review__footer {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  @media(min-width: $tablet-width) {
+    order: 6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 60px auto;
+    margin-top: 40px;
+  }
+  @media(min-width: $desktop-width) {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 53px;
+    margin-bottom: 78px;
+  }
+}
+
+.form-review__button {
+  display: flex;
+  justify-content: center;
+  border: none;
+  background-color: $blue;
+  margin: 30px auto;
+  margin-bottom: 20px;
+  padding: 18px 49px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $white;
+  text-transform: uppercase;
+  cursor: pointer;
+  @media(min-width: $tablet-width) {
+    margin: 0;
+    margin-right: 160px;
+    padding: 18px 65px;
+  }
+  @media(min-width: $desktop-width) {
+    padding: 18px 140px;
+    margin: 0;
+  }
+}
+
+.form-review__button:hover {
+  background-color: $dark-blue;
+}
+
+.form-review__button:active {
+  background-color: $extra-dark-blue;
+  color: $white-transparent;
+}
+
+.form-review__button:disabled {
+  background-color: $extra-light-grey;
+}
+
+.form-review__note {
+  text-align: center;
+  @media(min-width: $tablet-width) {
+    align-self: center;
+  }
+}

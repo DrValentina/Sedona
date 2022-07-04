@@ -1,0 +1,125 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 29px;
+  padding-bottom: 26px;
+  @media(min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 36px 0;
+  }
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  margin: 0 auto;
+}
+
+.footer__contact-text {
+  align-items: center;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  color: $black;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__contact-text:first-child {
+  margin-bottom: 10px;
+}
+
+.footer__contact-link {
+  color: $black;
+  text-decoration: none;
+}
+
+.footer__social {
+  margin: 0 auto;
+  margin-top: 34px;
+  align-self: center;
+  @media(min-width: $tablet-width) {
+    margin: 0 auto;
+  }
+}
+
+.footer__social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__social-item {
+  margin-right: 5px;
+}
+
+.footer__social-item:last-child {
+  margin-right: 0;
+}
+
+.footer__social-button {
+  display: flex;
+  justify-content: center;
+  background-color: $blue;
+  width: 48px;
+  height: 46px;
+  margin: 0 auto;
+}
+
+.footer__social-button:hover {
+  background-color: $nav-back-blue-hover;
+}
+
+.footer__social-button:active {
+  background-color: $extra-dark-blue;
+}
+
+.footer__social-button:active svg {
+  opacity: 0.3;
+}
+
+.footer__social-svg {
+  align-self: center;
+}
+
+.footer__copyright {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 40px;
+  @media(min-width: $tablet-width) {
+    margin: 0 auto;
+  }
+}
+
+.footer__copyright-text {
+  align-self: center;
+  margin-right: 15px;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.footer__copyright-link {
+  display: flex;
+}
+
+.footer__copyright-svg {
+  align-self: center;
+}
+
+.footer__copyright-svg:hover path{
+  fill: $dark-blue;
+}
+
+.footer__copyright-svg:active path{
+  fill: $black;
+  opacity: 0.3;
+}

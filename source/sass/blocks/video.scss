@@ -1,0 +1,196 @@
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 49px;
+  @media(min-width: $tablet-width) {
+    margin-bottom: 40px;
+    padding: 0 60px;
+  }
+  @media(min-width: $desktop-width) {
+    margin-bottom: 70px;
+    padding: 0;
+  }
+}
+
+.video__section-header {
+  width: 270px;
+  align-self: center;
+  @media(min-width: $tablet-width) {
+    width: auto;
+  }
+}
+
+.video__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 33px;
+  align-self: center;
+  @media(min-width: $tablet-width) {
+    margin-top: 70px;
+  }
+}
+
+.video__clip {
+  width: 320px;
+  height: 201px;
+  @media(min-width: $tablet-width) {
+    width: 648px;
+    height: 500px;
+  }
+  @media(min-width: $desktop-width) {
+    width: 800px;
+  }
+}
+
+.video__clip-img {
+  width: 320px;
+  height: 201px;
+  @media(min-width: $tablet-width) {
+    width: 648px;
+    height: 500px;
+  }
+  @media(min-width: $desktop-width) {
+    width: 800px;
+  }
+}
+
+.video__range {
+  position: absolute;
+  width: 280px;
+  height: 45px;
+  background-color: $black;
+  opacity: 0.6;
+  left: 20px;
+  top: 156px;
+  @media(min-width: $tablet-width) {
+    width: 648px;
+    height: 93px;
+    top: 407px;
+    left: 0;
+  }
+  @media(min-width: $desktop-width) {
+    width: 800px;
+    top: 407px;
+  }
+}
+
+.video__scale {
+  position: absolute;
+  width: 253px;
+  height: 3px;
+  background-color: $white;
+  opacity: 0.2;
+  top: 22px;
+  left: 22px;
+  @media(min-width: $tablet-width) {
+    width: 389px;
+    top: 45px;
+    left: 93px;
+  }
+  @media(min-width: $desktop-width) {
+    width: 540px;
+  }
+}
+
+.video__toggle {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background-color: $white;
+  border-radius: 50%;
+  top: 175px;
+  left: 78px;
+  cursor: pointer;
+  @media(min-width: $tablet-width) {
+    left: 206px;
+    top: 448.5px;
+  }
+}
+
+.video__control {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 280px;
+  height: 66px;
+  background-color: $light-beige;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  @media(min-width: $tablet-width) {
+    position: absolute;
+    background-color: transparent;
+    width: 648px;
+    height: 93px;
+    top: 407px;
+  }
+  @media(min-width: $desktop-width) {
+    width: 800px;
+  }
+}
+
+.video__control--left,
+.video__control--right {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  margin: 0;
+  padding: 0;
+}
+
+.video__control--left {
+  margin-left: 25px;
+  @media(min-width: $tablet-width) {
+    margin-left: 35px;
+  }
+}
+
+.video__control--right {
+  margin-right: 23px;
+  @media(min-width: $tablet-width) {
+    margin-right: 40px;
+  }
+}
+
+.video__control--right .video__button:first-child {
+  margin-right: 30px;
+}
+
+.video__button {
+  display: flex;
+  height: 20;
+  background-color: inherit;
+  border: none;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+  cursor: pointer;
+}
+
+.video__button path {
+  @media(min-width: $tablet-width) {
+    fill: $white;
+  }
+}
+
+.video__button:hover path {
+  fill: $dark-grey;
+  @media(min-width: $tablet-width) {
+    fill: $white;
+    opacity: 0.6;
+  }
+}
+
+.video__button:active path {
+  fill: $dark-grey;
+  opacity: 0.3;
+  @media(min-width: $tablet-width) {
+    fill: $white;
+    opacity: 0.3;
+  }
+}
