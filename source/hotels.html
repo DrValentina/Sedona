@@ -49,72 +49,77 @@
         <h2 class="visually-hidden">Фильтр</h2>
         <form class="hotels-filter__form" method="post" action="https://echo.htmlacademy.ru/">
 
-          <fieldset class="hotels-filter__checkbox">
-            <legend class="hotels-filter__title">Инфраструктура:</legend>
-            <ul class="hotels-filter__list">
-              <li class="hotels-filter__item">
-                <input class="hotels-filter__input--checkbox visually-hidden" type="checkbox" name="pool" id="filter-pool" checked>
-                <label class="hotels-filter__label" for="filter-pool">бассейн</label>
-              </li>
-              <li class="hotels-filter__item">
-                <input class="hotels-filter__input--checkbox visually-hidden" type="checkbox" name="parking-lot" id="filter-parking-lot" disabled>
-                <label class="hotels-filter__label" for="filter-parking-lot">парковка</label>
-              </li>
-              <li class="hotels-filter_item">
-                <input class="hotels-filter__input--checkbox visually-hidden" type="checkbox" name="wi-fi" id="filter-wi-fi">
-                <label class="hotels-filter__label" for="filter-wi-fi">Wi-Fi</label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="hotels-filter__checkbox-container">
+            <fieldset class="hotels-filter__checkbox">
+              <legend class="hotels-filter__title">Инфраструктура:</legend>
+              <ul class="hotels-filter__list">
+                <li class="hotels-filter__item">
+                  <input class="hotels-filter__input--checkbox visually-hidden" type="checkbox" name="pool" id="filter-pool" checked>
+                  <label class="hotels-filter__label" for="filter-pool">бассейн</label>
+                </li>
+                <li class="hotels-filter__item">
+                  <input class="hotels-filter__input--checkbox visually-hidden" type="checkbox" name="parking-lot" id="filter-parking-lot" disabled>
+                  <label class="hotels-filter__label" for="filter-parking-lot">парковка</label>
+                </li>
+                <li class="hotels-filter_item">
+                  <input class="hotels-filter__input--checkbox visually-hidden" type="checkbox" name="wi-fi" id="filter-wi-fi">
+                  <label class="hotels-filter__label" for="filter-wi-fi">Wi-Fi</label>
+                </li>
+              </ul>
+            </fieldset>
 
-          <fieldset class="hotels-filter__checkbox">
-            <legend class="hotels-filter__title">Тип жилья:</legend>
-            <ul class="hotels-filter__list">
-              <li class="hotels-filter__item">
-                <input class="hotels-filter__input--checkbox visually-hidden" type="checkbox" name="hotel" id="filter-hotel" checked>
-                <label class="hotels-filter__label" for="filter-hotel">гостиница</label>
-              </li>
-              <li class="hotels-filter__item">
-                <input class="hotels-filter__input--checkbox visually-hidden" type="checkbox" name="motel" id="filter-motel" checked>
-                <label class="hotels-filter__label" for="filter-motel">мотель</label>
-              </li>
-              <li class="hotels-filter__item">
-                <input class="hotels-filter__input--checkbox visually-hidden" type="checkbox" name="apartments" id="filter-apartments" checked>
-                <label class="hotels-filter__label" for="filter-apartments">апартаменты</label>
-              </li>
-            </ul>
-          </fieldset>
+            <fieldset class="hotels-filter__checkbox">
+              <legend class="hotels-filter__title">Тип жилья:</legend>
+              <ul class="hotels-filter__list">
+                <li class="hotels-filter__item">
+                  <input class="hotels-filter__input--checkbox visually-hidden" type="checkbox" name="hotel" id="filter-hotel" checked>
+                  <label class="hotels-filter__label" for="filter-hotel">гостиница</label>
+                </li>
+                <li class="hotels-filter__item">
+                  <input class="hotels-filter__input--checkbox visually-hidden" type="checkbox" name="motel" id="filter-motel" checked>
+                  <label class="hotels-filter__label" for="filter-motel">мотель</label>
+                </li>
+                <li class="hotels-filter__item">
+                  <input class="hotels-filter__input--checkbox visually-hidden" type="checkbox" name="apartments" id="filter-apartments" checked>
+                  <label class="hotels-filter__label" for="filter-apartments">апартаменты</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
 
-          <fieldset class="hotels-filter__slider slider">
-            <legend class="hotels-filter__title">Стоимость в сутки, ₽:</legend>
-            <div class="slider__range-filter">
-              <div class="slider__price">
-                <label class="slider__price-label slider__price--min">
-                  от <input class="slider__input" type="text" name="min-price" value="0">
-                </label>
+          <div class="hotels-filter__container">
+            <fieldset class="hotels-filter__slider slider">
+              <legend class="slider__title">Стоимость в сутки, ₽:</legend>
+              <div class="slider__range-filter">
+                <div class="slider__price">
+                  <label class="slider__price-label slider__price--min">
+                    от <input class="slider__input" type="text" name="min-price" value="0">
+                  </label>
+                </div>
+                <div class="slider__price">
+                  <label class="slider__price-label form__price--max">
+                    до <input class="slider__input" type="text" name="max-price" value="3000">
+                  </label>
+                </div>
               </div>
-              <div class="slider__price">
-                <label class="slider__price-label form__price--max">
-                  до <input class="slider__input" type="text" name="max-price" value="3000">
-                </label>
+              <div class="slider__range-controls">
+                <div class="slider__scale">
+                  <div class="slider__bar"></div>
+                </div>
+                <div class="slider__toggle slider__toggle--min" tabindex="0" aria-label="Индикатор управления минимальной стоимостью гостиницы"></div>
+                <div class="slider__toggle slider__toggle--max" tabindex="0" aria-label="Индикатор управления максимальной стоимостью гостиницы"></div>
               </div>
-            </div>
-            <div class="slider__range-controls">
-              <div class="slider__scale">
-                <div class="slider__bar"></div>
-              </div>
-              <div class="slider__toggle slider__toggle--min" tabindex="0" aria-label="Индикатор управления минимальной стоимостью гостиницы"></div>
-              <div class="slider__toggle slider__toggle--max" tabindex="0" aria-label="Индикатор управления максимальной стоимостью гостиницы"></div>
-            </div>
-          </fieldset>
-          <button class="hotels-filter__button" type="submit" name="filter-button">показать</button>
+            </fieldset>
+            <button class="hotels-filter__button" type="submit" name="filter-button">показать</button>
+          </div>
         </form>
       </section>
 
       <section class="result">
-        <div class="result__container">
-          <div class="result__filter">
-            <h2 class="visually-hidden">Результат</h2>
+        <div class="result__filter">
+          <h2 class="visually-hidden">Результат</h2>
+
+          <div class="result__filter-container">
             <p class="result__text">Найдено: 3</p>
             <ul class="result__sorting sorting">
               <li class="sorting__item sorting__item--header">Сортировка:</li>
@@ -128,41 +133,44 @@
                 <a class="sorting__button" href="#">по рейтингу</a>
               </li>
             </ul>
-
-            <ul class="result__filter-button">
-              <li class="result__filter-button--top">
-                <a class="result__filter-button-arrow" href="#" aria-label="Отфильтровать по возрастанию">
-                  <svg class="result__filter-img-arrow" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
-                  </svg></a>
-              </li>
-              <li class="result__filter-button--bottom">
-                <a class="result__filter-button-arrow" href="#" aria-label="Отфильтровать по убыванию">
-                  <svg class="result__filter-img-arrow" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.5 10L0 0H11" fill="#CACACA"/>
-                  </svg>
-                </a>
-              </li>
-            </ul>
           </div>
+
+          <ul class="result__filter-button">
+            <li class="result__filter-button--top">
+              <a class="result__filter-button-arrow" href="#" aria-label="Отфильтровать по возрастанию">
+                <svg class="result__filter-img-arrow" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
+                </svg>
+              </a>
+            </li>
+            <li class="result__filter-button--bottom">
+              <a class="result__filter-button-arrow" href="#" aria-label="Отфильтровать по убыванию">
+                <svg class="result__filter-img-arrow" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.5 10L0 0H11" fill="#CACACA"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
 
         <ul class="result__hotel hotel">
           <li class="hotel__item">
-            <figure class="hotel__img">
-              <img src="img/jpg/amara_resort.jpg" width="135" height="90" alt="Amara Resort & Spa">
-            </figure>
-            <div class="hotel__info">
-              <h3 class="hotel__title">
-                <a class="hotel__title-link" href="#">Amara Resort & Spa</a>
-              </h3>
-              <div class="hotel__info-data">
-                <p class="hotel__text">Гостиница</p>
-                <p class="hotel__text"> от 4000 ₽</p>
-              </div>
-              <div class="hotel__info-links">
-                <a class="hotel__link" href="#">Подробнее</a>
-                <a class="hotel__link hotel__link--brown" href="#">Забронировать</a>
+            <div class="hotel__container">
+              <figure class="hotel__img">
+                <img src="img/jpg/amara_resort.jpg" width="135" height="90" alt="Amara Resort & Spa">
+              </figure>
+              <div class="hotel__info">
+                <h3 class="hotel__title">
+                  <a class="hotel__title-link" href="#">Amara Resort & Spa</a>
+                </h3>
+                <div class="hotel__info-data">
+                  <p class="hotel__text">Гостиница</p>
+                  <p class="hotel__text"> от 4000 ₽</p>
+                </div>
+                <div class="hotel__info-links">
+                  <a class="hotel__link" href="#">Подробнее</a>
+                  <a class="hotel__link hotel__link--brown" href="#">Забронировать</a>
+                </div>
               </div>
             </div>
             <div class="hotel__rating">
@@ -177,14 +185,15 @@
           </li>
 
           <li class="hotel__item">
-            <figure class="hotel__img">
-              <img src="img/jpg/desert_quail_inn.jpg" width="135" height="90" alt="Desert Quail Inn">
-            </figure>
-            <div class="hotel__info">
-              <h3 class="hotel__title">
-                <a class="hotel__title-link" href="#">Desert Quail Inn</a>
-              </h3>
-              <div class="hotel__info-data">
+            <div class="hotel__container">
+              <figure class="hotel__img">
+                <img src="img/jpg/desert_quail_inn.jpg" width="135" height="90" alt="Desert Quail Inn">
+              </figure>
+              <div class="hotel__info">
+                <h3 class="hotel__title">
+                  <a class="hotel__title-link" href="#">Desert Quail Inn</a>
+                </h3>
+                <div class="hotel__info-data">
                   <p class="hotel__text">Мотель</p>
                   <p class="hotel__text"> от 3000 ₽</p>
                 </div>
@@ -192,6 +201,7 @@
                   <a class="hotel__link" href="#">Подробнее</a>
                   <a class="hotel__link hotel__link--brown" href="#">Забронировать</a>
                 </div>
+              </div>
             </div>
             <div class="hotel__rating">
               <div class="hotel__stars">
@@ -204,14 +214,15 @@
           </li>
 
           <li class="hotel__item">
-            <figure class="hotel__img">
-              <img src="img/jpg/villas_at_poco_diablo.jpg" width="135" height="90" alt="Villas At Poco Diablo">
-            </figure>
-            <div class="hotel__info">
-              <h3 class="hotel__title">
-                <a class="hotel__title-link" href="#">Villas At Poco Diablo</a>
-              </h3>
-              <div class="hotel__info-data">
+            <div class="hotel__container">
+              <figure class="hotel__img">
+                <img src="img/jpg/villas_at_poco_diablo.jpg" width="135" height="90" alt="Villas At Poco Diablo">
+              </figure>
+              <div class="hotel__info">
+                <h3 class="hotel__title">
+                  <a class="hotel__title-link" href="#">Villas At Poco Diablo</a>
+                </h3>
+                <div class="hotel__info-data">
                   <p class="hotel__text">Апартаменты</p>
                   <p class="hotel__text"> от 2000 ₽</p>
                 </div>
@@ -219,6 +230,7 @@
                   <a class="hotel__link" href="#">Подробнее</a>
                   <a class="hotel__link hotel__link--brown" href="#">Забронировать</a>
                 </div>
+              </div>
             </div>
             <div class="hotel__rating">
               <div class="hotel__stars">

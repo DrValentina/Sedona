@@ -3,6 +3,19 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 20px 10px;
+  @media(min-width: $tablet-width) {
+    padding: 30px 50px;
+  }
+  @media(min-width: $desktop-width) {
+    padding-left: 73px;
+    padding-right: 73px;
+  }
+}
+
+.result__filter-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .result__text {
@@ -15,16 +28,22 @@
   margin-right: 20px;
   padding: 0;
   align-self: center;
+  @media(min-width: $tablet-width) {
+    margin-right: 46px;
+  }
 }
 
 .result__filter-button {
   display: flex;
   flex-direction: row;
   list-style: none;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
+  align-items:flex-end;
   align-self: center;
 }
+
 .result__filter-button--top {
   margin-right: 12px;
 }

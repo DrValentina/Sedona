@@ -6,11 +6,30 @@
   color: $white;
   margin: 0;
   padding: 10px;
-  padding-top: 26px;
-  padding-bottom: 31px;
+  padding-top: 35px;
+  padding-bottom: 15px;
+  @media(min-width: $tablet-width) {
+    padding-top: 26px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  @media(min-width: $desktop-width) {
+    padding-left: 73px;
+    padding-right: 73px;
+  }
 }
 
 .hotels-filter__form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media(min-width: $tablet-width) {
+    justify-content: space-between;
+  }
+}
+
+.hotels-filter__checkbox-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -20,24 +39,44 @@
 .hotels-filter__checkbox {
   max-width: 140px;
   border: none;
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+  padding-bottom: 15px;
+  @media(min-width: $tablet-width) {
+    margin-right: 60px;
+  }
+  @media(min-width: $desktop-width) {
+    margin-right: 119px;
+  }
+}
+
+.hotels-filter__checkbox:nth-child(2) {
+  @media(min-width: $tablet-width) {
+    margin-right: 40px;
+  }
 }
 
 .hotels-filter__title {
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
+  margin-bottom: 24px;
 }
 
 .hotels-filter__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .hotels-filter__item:not(:last-child) {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .hotels-filter__label {
   position: relative;
+  margin-left: 40px;
 }
 
 .hotels-filter__input--checkbox + .hotels-filter__label::before {
@@ -84,7 +123,16 @@
   height: 23px;
 }
 
+.hotels-filter__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: flex-start;
+}
+
 .hotels-filter__button {
+  width: max-content;
+  height: max-content;
   color: $white;
   font-family: $ptsans;
   font-size: 14px;
@@ -95,5 +143,6 @@
   border: 2px solid $white;
   border-radius: 2px;
   padding: 8px 35px;
+  align-self: center;
   cursor: pointer;
 }

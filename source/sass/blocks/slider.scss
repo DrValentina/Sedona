@@ -4,6 +4,12 @@
   padding: 0;
 }
 
+.slider__title {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
 .slider__range-filter {
   width: 290px;
   position: relative;
@@ -13,6 +19,9 @@
   border: 2px solid $white;
   border-radius: 2px;
   margin-top: 10px;
+  @media(min-width: $desktop-width) {
+    width: 316px;
+  }
 }
 
 .slider__range-filter::after {
@@ -47,6 +56,9 @@
   width: 290px;
   height: 2px;
   background-color: $white-transparent;
+  @media(min-width: $desktop-width) {
+    width: 316px;
+  }
 }
 
 .slider__bar {

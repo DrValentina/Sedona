@@ -12,22 +12,52 @@
   justify-content: center;
   padding: 30px 10px;
   border: 1px solid $extra-light-grey;
+  @media(min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 50px;
+  }
+  @media(min-width: $desktop-width) {
+    padding: 30px 73px;
+  }
+}
+
+.hotel__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media(min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 }
 
 .hotel__img {
   margin: 0;
   padding: 0;
   align-self: center;
+  @media(min-width: $tablet-width) {
+    margin-right: 30px;
+  }
 }
 
 .hotel__info {
   display: flex;
   flex-direction: column;
   align-self: center;
+  @media(min-width: $tablet-width) {
+    align-self: flex-start;
+  }
 }
 
 .hotel__title {
   align-self: center;
+  margin: 0;
+  margin-bottom: 7px;
+  padding: 0;
+  @media(min-width: $tablet-width) {
+    align-self: flex-start;
+  }
 }
 
 .hotel__title-link {
@@ -43,12 +73,18 @@
   flex-direction: row;
   justify-content: center;
   align-self: center;
+  @media(min-width: $tablet-width) {
+    align-self: flex-start;
+  }
 }
 
 .hotel__text {
   font-size: 14px;
   line-height: 21px;
   color: $dark-grey;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
 }
 
 .hotel__text:first-child {
@@ -84,15 +120,27 @@
 .hotel__rating {
   align-self: center;
   margin-top: 30px;
+  @media(min-width: $tablet-width) {
+    margin: 0;
+    align-self: flex-end;
+  }
 }
 
 .hotel__stars {
   width: max-content;
   margin: 0 auto;
+  @media(min-width: $tablet-width) {
+    margin-right: 0;
+  }
 }
 
 .hotel__rating-text {
   color: $rating-grey;
+  margin: 0;
+  margin-top: 10px;
   padding: 3px 13px;
   background-color: $light-beige;
+  @media(min-width: $tablet-width) {
+    margin-top: 30px;
+  }
 }
