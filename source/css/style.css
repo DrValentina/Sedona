@@ -1041,6 +1041,11 @@ template {
     margin-bottom: 36px;
   }
 }
+@media (min-width: 1200px) {
+  .reasons-block__text {
+    margin-bottom: 62px;
+  }
+}
 
 .reasons-block__img {
   align-self: center;
@@ -1088,7 +1093,7 @@ template {
 }
 @media (min-width: 1200px) {
   .reasons-list__item {
-    padding-bottom: 60px;
+    padding-bottom: 32px;
     margin-right: 110px;
   }
 }
@@ -1165,8 +1170,107 @@ template {
 
 .modal {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 213px;
   background-color: #ffffff;
-  top: 185px;
+  top: 37%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
+  font-weight: 700;
+  padding: 20px;
+  box-shadow: 1px 5px 10px 0 rgba(1, 1, 1, 0.2);
+}
+
+.modal__amount {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.modal__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.modal__item-person {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.modal__label {
+  align-self: flex-start;
+}
+
+.modal__input-date {
+  width: inherit;
+  border: none;
+  background-color: #f2f2f2;
+  font-family: "PTSans", "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  padding: 6px 13px;
+  margin-right: 0;
+}
+
+.modal__button-calendar {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  top: 33px;
+  right: 13px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.modal__input-amount {
+  width: 36px;
+  padding: 6px 39px;
+  border: none;
+  background-color: #f2f2f2;
+  font-family: "PTSans", "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.modal__button-plus,
+.modal__button-minus {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.modal__button-minus {
+  top: 7px;
+  right: 83px;
+}
+
+.modal__button-plus {
+  top: 11px;
+  right: 8px;
+}
+
+.modal__form-button {
+  font-family: "PTSans", "Open Sans", sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 20px;
+  padding: 16px 70px;
+  border: none;
+  background-color: #81b3d2;
+  cursor: pointer;
 }
 
 .map {

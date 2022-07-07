@@ -93,6 +93,9 @@
     margin-left: 32px;
     margin-bottom: 36px;
   }
+  @media(min-width: $desktop-width) {
+    margin-bottom: 62px;
+  }
 }
 
 .reasons-block__img {
