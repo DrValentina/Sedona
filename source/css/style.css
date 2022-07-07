@@ -1855,7 +1855,7 @@ template {
 }
 @media (min-width: 768px) {
   .form-review__title {
-    max-width: 310px;
+    max-width: 400px;
     font-size: 21px;
   }
 }
@@ -1873,7 +1873,7 @@ template {
     background-color: #e5e5e5;
     top: 50%;
     z-index: -1;
-    left: -170px;
+    left: -125px;
   }
 }
 @media (min-width: 1200px) {
@@ -1915,6 +1915,10 @@ template {
   .form-review__item {
     padding: 0;
   }
+}
+
+.form-review__item:last-child {
+  margin-bottom: 5px;
 }
 
 .form-review__label {
@@ -2008,7 +2012,7 @@ template {
   .form-review__contact {
     width: 100%;
     order: 3;
-    margin-top: 72px;
+    margin-top: 52px;
   }
 }
 
@@ -2018,13 +2022,17 @@ template {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 72px;
-    margin-bottom: 25px;
   }
 }
 
 @media (min-width: 768px) {
   .form-review__item--contact {
     align-self: center;
+  }
+}
+@media (min-width: 1200px) {
+  .form-review__item--contact {
+    margin-bottom: 0;
   }
 }
 
@@ -2145,12 +2153,21 @@ template {
   }
 }
 
-.form-review__item--radio:not(:last-child) {
+.form-review__item--radio {
   margin-bottom: 40px;
 }
 @media (min-width: 768px) {
-  .form-review__item--radio:not(:last-child) {
+  .form-review__item--radio {
     margin-bottom: 52px;
+  }
+}
+
+.form-review__item--radio:last-child {
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .form-review__item--radio:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -2213,7 +2230,7 @@ template {
 }
 
 .form-review__list--checkbox {
-  margin-top: 37px;
+  margin-top: 30px;
 }
 @media (min-width: 768px) {
   .form-review__list--checkbox {
@@ -2261,6 +2278,7 @@ template {
   height: 46px;
   background-color: #f2f2f2;
   border: 1px solid #f2f2f2;
+  border-radius: 5px;
   top: -12px;
   left: -70px;
 }
@@ -2298,7 +2316,7 @@ template {
   .form-review__emotions {
     width: 100%;
     order: 5;
-    margin-top: 65px;
+    margin-top: 35px;
   }
 }
 
@@ -2320,7 +2338,7 @@ template {
 @media (min-width: 768px) {
   .form-review__textarea {
     width: 604px;
-    height: 160px;
+    height: 134px;
     margin-top: 55px;
   }
 }
@@ -2362,8 +2380,8 @@ template {
   .form-review__footer {
     width: 100%;
     justify-content: space-between;
-    margin-top: 53px;
-    margin-bottom: 78px;
+    margin-top: 38px;
+    margin-bottom: 66px;
   }
 }
 
@@ -2411,6 +2429,7 @@ template {
 
 .form-review__note {
   text-align: center;
+  margin-bottom: 0;
 }
 @media (min-width: 768px) {
   .form-review__note {
@@ -2421,18 +2440,27 @@ template {
 .error-pop-up {
   position: absolute;
   width: 230px;
-  top: 1490px;
+  top: 1330px;
+  left: 50%;
   margin: 0;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
   padding: 40px 40px;
   padding-bottom: 35px;
   background-color: #ffffff;
-  box-shadow: 1px 1px 10px 0 rgba(1, 1, 1, 0.2);
+  box-shadow: 1px 5px 10px 0 rgba(1, 1, 1, 0.2);
   text-align: center;
 }
 @media (min-width: 768px) {
   .error-pop-up {
     width: 276px;
+    top: 1465px;
     padding: 50px 62px;
+  }
+}
+@media (min-width: 1200px) {
+  .error-pop-up {
+    top: 1415px;
   }
 }
 
@@ -2488,21 +2516,30 @@ template {
 .right-pop-up {
   position: absolute;
   width: 280px;
-  top: 1615px;
+  top: 1620px;
+  left: 50%;
   margin: 0;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
   padding: 20px 20px;
   padding-top: 38px;
   background-color: #ffffff;
-  box-shadow: 1px 1px 10px 0 rgba(1, 1, 1, 0.2);
+  box-shadow: 1px 5px 10px 0 rgba(1, 1, 1, 0.2);
   text-align: center;
   background-image: linear-gradient(#ffffff 68%, #f2f2f2 32%);
 }
 @media (min-width: 768px) {
   .right-pop-up {
     width: 458px;
+    top: 1300px;
     padding: 44px 90px;
     padding-top: 55px;
     background-image: linear-gradient(#ffffff 57%, #f2f2f2 43%);
+  }
+}
+@media (min-width: 1200px) {
+  .right-pop-up {
+    top: 1130px;
   }
 }
 
@@ -2528,7 +2565,7 @@ template {
   line-height: 24px;
   font-weight: 400;
   margin: 0 auto;
-  margin-bottom: 48px;
+  margin-bottom: 50px;
   color: #333333;
 }
 @media (min-width: 768px) {

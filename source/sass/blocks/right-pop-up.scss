@@ -1,19 +1,26 @@
 .right-pop-up {
   position: absolute;
   width: 280px;
-  top: 1615px;
+  top: 1620px;
+  left: 50%;
   margin: 0;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
   padding: 20px 20px;
   padding-top: 38px;
   background-color: $white;
-  box-shadow: 1px 1px 10px 0 $grey-shadow-nav;
+  box-shadow: 1px 5px 10px 0 $grey-shadow-nav;
   text-align: center;
   background-image: linear-gradient($white 68%, $light-beige 32%);
   @media(min-width: $tablet-width) {
     width: 458px;
+    top: 1300px;
     padding: 44px 90px;
     padding-top: 55px;
     background-image: linear-gradient($white 57%, $light-beige 43%);
+  }
+  @media(min-width: $desktop-width) {
+    top: 1130px;
   }
 }
 
@@ -37,7 +44,7 @@
   line-height: 24px;
   font-weight: 400;
   margin: 0 auto;
-  margin-bottom: 48px;
+  margin-bottom: 50px;
   color: $dark-grey;
   @media(min-width: $tablet-width) {
     max-width: 400px;

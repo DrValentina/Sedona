@@ -25,7 +25,7 @@
   margin: 0 auto;
   background-color: $white;
   @media(min-width: $tablet-width) {
-    max-width: 310px;
+    max-width: 400px;
     font-size: 21px;
   }
 }
@@ -43,7 +43,7 @@
     background-color: $extra-light-grey;
     top: 50%;
     z-index: -1;
-    left: -170px;
+    left: -125px;
   }
   @media(min-width: $desktop-width) {
     width: 960px;
@@ -77,6 +77,10 @@
   @media(min-width: $tablet-width) {
     padding: 0;
   }
+}
+
+.form-review__item:last-child {
+  margin-bottom: 5px;
 }
 
 .form-review__label {
@@ -172,7 +176,7 @@
   @media(min-width: $tablet-width) {
     width: 100%;
     order: 3;
-    margin-top: 72px;
+    margin-top: 52px;
   }
 }
 
@@ -182,13 +186,15 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 72px;
-    margin-bottom: 25px;
   }
 }
 
 .form-review__item--contact {
   @media(min-width: $tablet-width) {
     align-self: center;
+  }
+  @media(min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -291,10 +297,17 @@
   }
 }
 
-.form-review__item--radio:not(:last-child) {
+.form-review__item--radio {
   margin-bottom: 40px;
   @media(min-width: $tablet-width) {
     margin-bottom: 52px;
+  }
+}
+
+.form-review__item--radio:last-child {
+  margin-bottom: 15px;
+  @media(min-width: $tablet-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -355,7 +368,7 @@
 }
 
 .form-review__list--checkbox {
-  margin-top: 37px;
+  margin-top: 30px;
   @media(min-width: $tablet-width) {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -397,6 +410,7 @@
   height: 46px;
   background-color: $light-beige;
   border: 1px solid $light-beige;
+  border-radius: 5px;
   top: -12px;
   left: -70px;
 }
@@ -435,7 +449,7 @@
   @media(min-width: $tablet-width) {
     width: 100%;
     order: 5;
-    margin-top: 65px;
+    margin-top: 35px;
   }
 }
 
@@ -455,7 +469,7 @@
   padding: 13px 21px;
   @media(min-width: $tablet-width) {
     width: 604px;
-    height: 160px;
+    height: 134px;
     margin-top: 55px;
   }
   @media(min-width: $desktop-width) {
@@ -493,8 +507,8 @@
   @media(min-width: $desktop-width) {
     width: 100%;
     justify-content: space-between;
-    margin-top: 53px;
-    margin-bottom: 78px;
+    margin-top: 38px;
+    margin-bottom: 66px;
   }
 }
 
@@ -538,6 +552,7 @@
 
 .form-review__note {
   text-align: center;
+  margin-bottom: 0;
   @media(min-width: $tablet-width) {
     align-self: center;
   }
