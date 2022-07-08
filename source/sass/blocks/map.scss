@@ -6,7 +6,7 @@
 
 .map__container {
   position: relative;
-  margin: 0 30px;
+  margin: 0;
   padding: 0;
   margin-top: 33px;
   @media(min-width: $tablet-width) {
@@ -36,6 +36,10 @@
   }
 }
 
+.map__modal {
+  position: relative;
+}
+
 .map__link {
   font-size: 21px;
   line-height: 26px;
@@ -45,8 +49,9 @@
   border: 1px solid $blue;
   padding: 15px 32px;
   text-decoration: none;
+  margin: 0 auto;
   @media(min-width: $tablet-width) {
-    padding: 15px 120px;
+    padding: 30px 190px;
   }
 }
 
@@ -66,7 +71,10 @@
 }
 
 .map__img {
-  margin-top: 60px;
+  margin-top: 13px;
+  @media(min-width: $tablet-width) {
+    margin-top: 27px;
+  }
 }
 
 .map__img-map {

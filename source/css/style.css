@@ -1175,7 +1175,7 @@ template {
   justify-content: flex-start;
   width: 213px;
   background-color: #ffffff;
-  top: 37%;
+  top: 42px;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, 0);
@@ -1183,11 +1183,24 @@ template {
   padding: 20px;
   box-shadow: 1px 5px 10px 0 rgba(1, 1, 1, 0.2);
 }
+@media (min-width: 768px) {
+  .modal {
+    width: 459px;
+    padding: 55px;
+    top: 55px;
+  }
+}
 
 .modal__amount {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+@media (min-width: 768px) {
+  .modal__amount {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .modal__item {
@@ -1196,43 +1209,97 @@ template {
   flex-direction: column;
   margin-bottom: 10px;
 }
+@media (min-width: 768px) {
+  .modal__item {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 29px;
+  }
+}
 
 .modal__item-person {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+@media (min-width: 768px) {
+  .modal__item-person {
+    justify-content: flex-start;
+  }
+}
 
 .modal__label {
-  align-self: flex-start;
+  align-self: center;
+}
+@media (min-width: 768px) {
+  .modal__label {
+    margin-right: 24px;
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal__label-adults {
+    margin-right: 42px;
+  }
 }
 
 .modal__input-date {
   width: inherit;
-  border: none;
+  border: 2px solid #f2f2f2;
   background-color: #f2f2f2;
   font-family: "PTSans", "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
+  color: #000000;
   padding: 6px 13px;
   margin-right: 0;
+}
+@media (min-width: 768px) {
+  .modal__input-date {
+    width: 100%;
+  }
+}
+.modal__input-date:hover {
+  background-color: #ebebeb;
+  border-color: #ebebeb;
+}
+.modal__input-date:focus {
+  background: #ffffff;
+  border-color: #e5e5e5;
+  outline: none;
 }
 
 .modal__button-calendar {
   position: absolute;
+  width: 40px;
+  height: 40px;
   border: none;
   background-color: transparent;
-  top: 33px;
-  right: 13px;
+  top: 27px;
+  right: 0;
   padding: 0;
   cursor: pointer;
+}
+@media (min-width: 768px) {
+  .modal__button-calendar {
+    top: 2px;
+  }
+}
+
+.modal__button-calendar:hover path {
+  fill: #000000;
+}
+
+.modal__button-calendar:active path {
+  fill: #81b3d2;
 }
 
 .modal__input-amount {
   width: 36px;
   padding: 6px 39px;
-  border: none;
+  border: 2px solid #f2f2f2;
   background-color: #f2f2f2;
   font-family: "PTSans", "Open Sans", sans-serif;
   font-size: 14px;
@@ -1240,23 +1307,54 @@ template {
   font-weight: 700;
   text-align: center;
 }
+.modal__input-amount:hover {
+  background-color: #ebebeb;
+  border-color: #ebebeb;
+}
+.modal__input-amount:focus {
+  background-color: #ffffff;
+  border-color: #e5e5e5;
+  outline: none;
+}
 
 .modal__button-plus,
 .modal__button-minus {
   position: absolute;
+  width: 42px;
+  height: 42px;
+  margin: 0;
+  padding: 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
 }
 
 .modal__button-minus {
-  top: 7px;
-  right: 83px;
+  top: 0;
+  right: 75px;
 }
 
 .modal__button-plus {
-  top: 11px;
-  right: 8px;
+  top: 0;
+  right: 0;
+}
+
+.modal__button-minus > .modal__button-img {
+  margin-bottom: 3px;
+}
+
+.modal__button-plus > .modal__button-img {
+  margin-top: 4px;
+}
+
+.modal__button-plus:hover path,
+.modal__button-minus:hover rect {
+  fill: #000000;
+}
+
+.modal__button-plus:active path,
+.modal__button-minus:active rect {
+  fill: #81b3d2;
 }
 
 .modal__form-button {
@@ -1272,6 +1370,18 @@ template {
   background-color: #81b3d2;
   cursor: pointer;
 }
+@media (min-width: 768px) {
+  .modal__form-button {
+    padding: 16px 196px;
+  }
+}
+.modal__form-button:hover {
+  background-color: #669ec0;
+}
+.modal__form-button:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
 
 .map {
   margin: 0 auto;
@@ -1281,7 +1391,7 @@ template {
 
 .map__container {
   position: relative;
-  margin: 0 30px;
+  margin: 0;
   padding: 0;
   margin-top: 33px;
 }
@@ -1317,6 +1427,10 @@ template {
   }
 }
 
+.map__modal {
+  position: relative;
+}
+
 .map__link {
   font-size: 21px;
   line-height: 26px;
@@ -1326,10 +1440,11 @@ template {
   border: 1px solid #81b3d2;
   padding: 15px 32px;
   text-decoration: none;
+  margin: 0 auto;
 }
 @media (min-width: 768px) {
   .map__link {
-    padding: 15px 120px;
+    padding: 30px 190px;
   }
 }
 
@@ -1349,7 +1464,12 @@ template {
 }
 
 .map__img {
-  margin-top: 60px;
+  margin-top: 13px;
+}
+@media (min-width: 768px) {
+  .map__img {
+    margin-top: 27px;
+  }
 }
 
 .map__img-map {
@@ -2855,6 +2975,13 @@ template {
   align-self: center;
   cursor: pointer;
 }
+.hotels-filter__button:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+.hotels-filter__button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
 
 .slider {
   border: none;
@@ -2903,6 +3030,8 @@ template {
   color: #ffffff;
   background-color: transparent;
   border: none;
+  border: none;
+  outline: none;
 }
 
 .slider__range-controls {
@@ -2937,6 +3066,13 @@ template {
   background-color: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
+  box-shadow: 0 2px 0 0 #ababab;
+  cursor: pointer;
+}
+.slider__toggle:hover {
+  width: 5px;
+  height: 5px;
+  border: 9px solid #ffffff;
 }
 
 .slider__toggle--min {
@@ -3004,6 +3140,18 @@ template {
   margin-right: 12px;
 }
 
+.result__filter-img-arrow:hover path {
+  fill: #000000;
+}
+
+.result__filter-img-arrow:active path {
+  fill: #81b3d2;
+}
+
+.result__filter-img-arrow--on path {
+  fill: #81b3d2;
+}
+
 .sorting {
   display: flex;
   flex-direction: row;
@@ -3042,6 +3190,13 @@ template {
   color: rgba(0, 0, 0, 0.3);
   text-decoration: none;
   border-bottom: 1px dotted #81b3d2;
+}
+.sorting__button:hover {
+  color: #81b3d2;
+}
+.sorting__button:active {
+  color: #000000;
+  border: none;
 }
 
 .sorting__button--on {
@@ -3131,6 +3286,12 @@ template {
   font-weight: 700;
   text-decoration: none;
 }
+.hotel__title-link:hover {
+  color: #81b3d2;
+}
+.hotel__title-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
 
 .hotel__info-data {
   display: flex;
@@ -3171,7 +3332,6 @@ template {
   text-decoration: none;
   margin: 0;
   padding: 3px 16px;
-  background-color: #81b3d2;
   align-self: center;
 }
 
@@ -3179,8 +3339,26 @@ template {
   margin-right: 6px;
 }
 
+.hotel__link--blue {
+  background-color: #81b3d2;
+}
+.hotel__link--blue:hover {
+  background-color: #669ec0;
+}
+.hotel__link--blue:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
 .hotel__link--brown {
   background-color: #766357;
+}
+.hotel__link--brown:hover {
+  background-color: #604e43;
+}
+.hotel__link--brown:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
 }
 
 .hotel__rating {

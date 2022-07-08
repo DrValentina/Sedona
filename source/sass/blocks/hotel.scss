@@ -66,6 +66,12 @@
   line-height: 26px;
   font-weight: 700;
   text-decoration: none;
+  &:hover {
+    color: $blue;
+  }
+  &:active {
+    color: $dark-grey-transparent;
+  }
 }
 
 .hotel__info-data {
@@ -105,7 +111,6 @@
   text-decoration: none;
   margin: 0;
   padding: 3px 16px;
-  background-color: $blue;
   align-self: center;
 }
 
@@ -113,8 +118,26 @@
   margin-right: 6px;
 }
 
+.hotel__link--blue {
+  background-color: $blue;
+  &:hover {
+    background-color: $nav-back-blue-hover;
+  }
+  &:active {
+    color: $white-transparent;
+    background-color: $extra-dark-blue;
+  }
+}
+
 .hotel__link--brown {
   background-color: $brown;
+  &:hover {
+    background-color: $dark-brown;
+  }
+  &:active {
+    color: $white-transparent;
+    background-color: $extra-dark-brown;
+  }
 }
 
 .hotel__rating {

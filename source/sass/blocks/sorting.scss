@@ -34,6 +34,13 @@
   color: $dark-grey-transparent;
   text-decoration: none;
   border-bottom: 1px dotted $blue;
+  &:hover {
+    color: $blue;
+  }
+  &:active {
+    color: $black;
+    border: none;
+  }
 }
 
 .sorting__button--on {

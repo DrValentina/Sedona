@@ -5,88 +5,172 @@
   justify-content: flex-start;
   width: 213px;
   background-color: $white;
-  top: 37%;
+  top: 42px;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, 0);
   font-weight: 700;
   padding: 20px;
   box-shadow: 1px 5px 10px 0 $grey-shadow-nav;
+  @media(min-width: $tablet-width) {
+    width: 459px;
+    padding: 55px;
+    top: 55px;
+  }
 }
 
 .modal__amount {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  @media(min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .modal__item {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px
+  margin-bottom: 10px;
+  @media(min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 29px;
+  }
 }
 
 .modal__item-person {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @media(min-width: $tablet-width) {
+    justify-content: flex-start;
+  }
 }
 
 .modal__label {
-  align-self: flex-start;
+  align-self: center;
+  @media(min-width: $tablet-width) {
+    margin-right: 24px;
+    white-space: nowrap;
+  }
+}
+
+.modal__label-adults {
+  @media(min-width: $tablet-width) {
+    margin-right: 42px;
+  }
 }
 
 .modal__input-date {
   width: inherit;
-  border: none;
+  border: 2px solid $light-beige;
   background-color: $light-beige;
   font-family: $ptsans;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
+  color: $black;
   padding: 6px 13px;
   margin-right: 0;
+  @media(min-width: $tablet-width) {
+    width: 100%;
+  }
+  &:hover {
+    background-color: $grey;
+    border-color: $grey;
+  }
+  &:focus {
+    background: $white;
+    border-color: $extra-light-grey;
+    outline: none;
+  }
 }
 
 .modal__button-calendar {
   position: absolute;
+  width: 40px;
+  height: 40px;
   border: none;
   background-color: transparent;
-  top: 33px;
-  right: 13px;
+  top: 27px;
+  right: 0;
   padding: 0;
   cursor: pointer;
+  @media(min-width: $tablet-width) {
+    top: 2px;
+  }
+}
+
+.modal__button-calendar:hover path{
+  fill: $black;
+}
+
+.modal__button-calendar:active path{
+  fill: $blue;
 }
 
 .modal__input-amount {
   width: 36px;
   padding: 6px 39px;
-  border: none;
+  border: 2px solid $light-beige;
   background-color: $light-beige;
   font-family: $ptsans;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
+  &:hover {
+    background-color: $grey;
+    border-color: $grey;
+  }
+  &:focus {
+    background-color: $white;
+    border-color: $extra-light-grey;
+    outline: none;
+  }
 }
 
 .modal__button-plus,
 .modal__button-minus {
   position: absolute;
+  width: 42px;
+  height: 42px;
+  margin: 0;
+  padding: 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
 }
 
 .modal__button-minus {
-  top: 7px;
-  right: 83px;
+  top: 0;
+  right: 75px;
 }
 
 .modal__button-plus {
-  top: 11px;
-  right: 8px;
+  top: 0;
+  right: 0;
+}
+
+.modal__button-minus > .modal__button-img {
+  margin-bottom: 3px;
+}
+
+.modal__button-plus > .modal__button-img {
+  margin-top: 4px;
+}
+
+.modal__button-plus:hover path,
+.modal__button-minus:hover rect {
+  fill: $black;
+}
+
+.modal__button-plus:active path,
+.modal__button-minus:active rect {
+  fill: $blue;
 }
 
 
@@ -102,4 +186,14 @@
   border: none;
   background-color: $blue;
   cursor: pointer;
+  @media(min-width: $tablet-width) {
+    padding: 16px 196px;
+  }
+  &:hover {
+    background-color: $nav-back-blue-hover;
+  }
+  &:active {
+    background-color: $extra-dark-blue;
+    color: $white-transparent;
+  }
 }

@@ -43,6 +43,8 @@
   color: $white;
   background-color: transparent;
   border: none;
+  border: none;
+  outline: none;
 }
 
 .slider__range-controls {
@@ -75,6 +77,13 @@
   background-color: $granit;
   border: 8px solid $white;
   border-radius: 50%;
+  box-shadow: 0 2px 0 0 $granit;
+  cursor: pointer;
+  &:hover {
+    width: 5px;
+    height: 5px;
+    border: 9px solid $white;
+  }
 }
 
 .slider__toggle--min {
