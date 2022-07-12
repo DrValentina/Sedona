@@ -1187,7 +1187,7 @@ template {
   .modal {
     width: 459px;
     padding: 55px;
-    top: 55px;
+    top: 87px;
   }
 }
 
@@ -1431,10 +1431,11 @@ template {
   position: relative;
 }
 
-.map__link {
+.map__button {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  text-transform: uppercase;
   color: #ffffff;
   background-color: #81b3d2;
   border: 1px solid #81b3d2;
@@ -1443,33 +1444,24 @@ template {
   margin: 0 auto;
 }
 @media (min-width: 768px) {
-  .map__link {
+  .map__button {
     padding: 30px 190px;
   }
 }
 
-.map__link:hover {
+.map__button:hover {
   background-color: #669ec0;
   border: 1px solid #669ec0;
 }
 
-.map__link:active {
+.map__button:active {
   background-color: #5496bd;
   border: 1px solid #5496bd;
   color: rgba(255, 255, 255, 0.3);
 }
 
-.map__link:disabled {
+.map__button:disabled {
   background-color: #e5e5e5;
-}
-
-.map__img {
-  margin-top: 13px;
-}
-@media (min-width: 768px) {
-  .map__img {
-    margin-top: 27px;
-  }
 }
 
 .map__img-map {

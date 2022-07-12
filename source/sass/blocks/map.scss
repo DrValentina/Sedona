@@ -40,10 +40,11 @@
   position: relative;
 }
 
-.map__link {
+.map__button {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  text-transform: uppercase;
   color: $white;
   background-color: $blue;
   border: 1px solid $blue;
@@ -55,26 +56,19 @@
   }
 }
 
-.map__link:hover {
+.map__button:hover {
   background-color: $dark-blue;
   border: 1px solid $dark-blue;
 }
 
-.map__link:active {
+.map__button:active {
   background-color: $extra-dark-blue;
   border: 1px solid $extra-dark-blue;
   color: $white-transparent;
 }
 
-.map__link:disabled {
+.map__button:disabled {
   background-color: $extra-light-grey;
-}
-
-.map__img {
-  margin-top: 13px;
-  @media(min-width: $tablet-width) {
-    margin-top: 27px;
-  }
 }
 
 .map__img-map {
