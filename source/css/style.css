@@ -991,6 +991,7 @@ template {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  margin: 0 auto;
   margin-top: 40px;
 }
 @media (min-width: 768px) {
@@ -1060,7 +1061,7 @@ template {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 15px 0;
+  margin: 15px auto;
   padding: 0;
   list-style: none;
 }
@@ -1074,6 +1075,7 @@ template {
   margin: 0;
   padding: 0;
   padding-left: 70px;
+  align-self: center;
 }
 @media (min-width: 768px) {
   .reasons-list__item {
@@ -2807,6 +2809,7 @@ template {
   margin-right: 20px;
   padding: 0;
   padding-bottom: 15px;
+  text-align: left;
 }
 @media (min-width: 768px) {
   .hotels-filter__checkbox {
@@ -2818,7 +2821,6 @@ template {
     margin-right: 119px;
   }
 }
-
 @media (min-width: 768px) {
   .hotels-filter__checkbox:nth-child(2) {
     margin-right: 40px;
@@ -2930,7 +2932,6 @@ template {
 
 .slider__title {
   font-size: 16px;
-  line-height: 21px;
   font-weight: 700;
 }
 
@@ -2949,14 +2950,13 @@ template {
     width: 316px;
   }
 }
-
 .slider__range-filter::after {
   content: "";
   position: absolute;
   width: 2px;
-  height: 22px;
+  height: 21px;
   background-color: #ffffff;
-  top: 4px;
+  top: 2px;
 }
 
 .slider__price {
@@ -2968,7 +2968,6 @@ template {
   max-width: 35px;
   color: #ffffff;
   background-color: transparent;
-  border: none;
   border: none;
   outline: none;
 }
@@ -3082,7 +3081,6 @@ template {
 .result__filter-img-arrow:hover path {
   fill: #000000;
 }
-
 .result__filter-img-arrow:active path {
   fill: #81b3d2;
 }
@@ -3109,7 +3107,6 @@ template {
 .sorting__item--header {
   font-size: 12px;
   line-height: 18px;
-  font-weight: 400;
   color: #000000;
 }
 
@@ -3125,7 +3122,6 @@ template {
 .sorting__button {
   font-size: 12px;
   line-height: 18px;
-  font-weight: 400;
   color: rgba(0, 0, 0, 0.3);
   text-decoration: none;
   border-bottom: 1px dotted #81b3d2;
@@ -3245,14 +3241,10 @@ template {
 }
 
 .hotel__text {
-  font-size: 14px;
-  line-height: 21px;
-  color: #333333;
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
 }
-
 .hotel__text:first-child {
   margin-right: 40px;
 }
@@ -3264,8 +3256,6 @@ template {
 }
 
 .hotel__link {
-  font-size: 14px;
-  line-height: 21px;
   font-weight: 700;
   color: #ffffff;
   text-decoration: none;
@@ -3273,7 +3263,6 @@ template {
   padding: 3px 16px;
   align-self: center;
 }
-
 .hotel__link:first-child {
   margin-right: 6px;
 }

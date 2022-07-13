@@ -85,16 +85,12 @@
 }
 
 .hotel__text {
-  font-size: 14px;
-  line-height: 21px;
-  color: $dark-grey;
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
-}
-
-.hotel__text:first-child {
-  margin-right: 40px;
+  &:first-child {
+    margin-right: 40px;
+  }
 }
 
 .hotel__info-links {
@@ -104,18 +100,15 @@
 }
 
 .hotel__link {
-  font-size: 14px;
-  line-height: 21px;
   font-weight: 700;
   color: $white;
   text-decoration: none;
   margin: 0;
   padding: 3px 16px;
   align-self: center;
-}
-
-.hotel__link:first-child {
-  margin-right: 6px;
+  &:first-child {
+    margin-right: 6px;
+  }
 }
 
 .hotel__link--blue {

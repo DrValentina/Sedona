@@ -48,12 +48,13 @@
   margin-right: 12px;
 }
 
-.result__filter-img-arrow:hover path {
-  fill: $black;
-}
-
-.result__filter-img-arrow:active path {
-  fill: $blue;
+.result__filter-img-arrow {
+  &:hover path {
+    fill: $black;
+  }
+  &:active path {
+    fill: $blue;
+  }
 }
 
 .result__filter-img-arrow--on path {
