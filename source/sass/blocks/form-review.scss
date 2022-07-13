@@ -32,22 +32,21 @@
 
 .form-review__title--line {
   position: relative;
-}
-
-.form-review__title--line::before {
-  @media(min-width: $tablet-width) {
-    content: "";
-    position: absolute;
-    width: 648px;
-    height: 1px;
-    background-color: $extra-light-grey;
-    top: 50%;
-    z-index: -1;
-    left: -125px;
-  }
-  @media(min-width: $desktop-width) {
-    width: 960px;
-    left: -325px;
+  &::before {
+    @media(min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      width: 648px;
+      height: 1px;
+      background-color: $extra-light-grey;
+      top: 50%;
+      z-index: -1;
+      left: -125px;
+    }
+    @media(min-width: $desktop-width) {
+      width: 960px;
+      left: -325px;
+    }
   }
 }
 

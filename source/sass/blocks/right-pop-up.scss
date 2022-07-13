@@ -66,4 +66,14 @@
     font-size: 21px;
     padding: 15px 140px;
   }
+  &:hover {
+    background-color: $dark-blue;
+  }
+  &:active {
+    background-color: $extra-dark-blue;
+    color: $white-transparent;
+  }
+  &:disabled {
+    background-color: $extra-light-grey;
+  }
 }

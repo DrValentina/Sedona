@@ -1,11 +1,13 @@
 .reasons-list {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
-  margin: 35px 0;
+  margin: 15px 0;
   padding: 0;
   list-style: none;
+  @media(min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .reasons-list__item {
@@ -23,11 +25,10 @@
     padding-bottom: 32px;
     margin-right: 110px;
   }
-}
-
-.reasons-list__item:last-child {
-  @media(min-width: $tablet-width) {
-    margin-right: 0;
+  &:last-child {
+    @media(min-width: $tablet-width) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -66,17 +67,23 @@
 
 .reasons-list__item-title {
   font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
   margin: 20px 0;
+  text-align: left;
   @media(min-width: $tablet-width) {
     font-size: 21px;
+    text-align: center;
   }
 }
 
 .reasons-list__item-text {
   max-width: 230px;
   line-height: 21px;
+  text-align: left;
   @media(min-width: $tablet-width) {
     max-width: 193px;
+    text-align: center;
   }
   @media(min-width: $desktop-width) {
     max-width: 280px;

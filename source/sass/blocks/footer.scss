@@ -73,18 +73,15 @@
   width: 48px;
   height: 46px;
   margin: 0 auto;
-}
-
-.footer__social-button:hover {
-  background-color: $nav-back-blue-hover;
-}
-
-.footer__social-button:active {
-  background-color: $extra-dark-blue;
-}
-
-.footer__social-button:active svg {
-  opacity: 0.3;
+  &:hover {
+    background-color: $nav-back-blue-hover;
+  }
+  &:active {
+    background-color: $extra-dark-blue;
+  }
+  &:active svg {
+    opacity: 0.3;
+  }
 }
 
 .footer__social-svg {
@@ -113,13 +110,11 @@
 
 .footer__copyright-svg {
   align-self: center;
-}
-
-.footer__copyright-svg:hover path{
-  fill: $dark-blue;
-}
-
-.footer__copyright-svg:active path{
-  fill: $black;
-  opacity: 0.3;
+  &:hover path {
+    fill: $dark-blue;
+  }
+  &:active path {
+    fill: $black;
+    opacity: 0.3;
+  }
 }

@@ -62,4 +62,14 @@
     padding: 15px 108px;
     font-size: 21px;
   }
+  &:hover {
+    background-color: $dark-blue;
+  }
+  &:active {
+    background-color: $extra-dark-blue;
+    color: $white-transparent;
+  }
+  &:disabled {
+    background-color: $extra-light-grey;
+  }
 }

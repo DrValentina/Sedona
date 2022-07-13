@@ -5,7 +5,7 @@
   justify-content: flex-start;
   width: 213px;
   background-color: $white;
-  top: 42px;
+  top: 56px;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, 0);
@@ -15,7 +15,7 @@
   @media(min-width: $tablet-width) {
     width: 459px;
     padding: 55px;
-    top: 87px;
+    top: 86px;
   }
 }
 
@@ -64,8 +64,7 @@
   }
 }
 
-.modal__input-date {
-  width: inherit;
+.modal__input {
   border: 2px solid $light-beige;
   background-color: $light-beige;
   font-family: $ptsans;
@@ -73,11 +72,6 @@
   line-height: 26px;
   font-weight: 700;
   color: $black;
-  padding: 6px 13px;
-  margin-right: 0;
-  @media(min-width: $tablet-width) {
-    width: 100%;
-  }
   &:hover {
     background-color: $grey;
     border-color: $grey;
@@ -89,48 +83,40 @@
   }
 }
 
+.modal__input-date {
+  width: inherit;
+  padding: 6px 13px;
+  margin-right: 0;
+  @media(min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
 .modal__button-calendar {
   position: absolute;
   width: 40px;
   height: 40px;
   border: none;
   background-color: transparent;
-  top: 27px;
+  top: 23px;
   right: 0;
   padding: 0;
   cursor: pointer;
   @media(min-width: $tablet-width) {
     top: 2px;
   }
-}
-
-.modal__button-calendar:hover path{
-  fill: $black;
-}
-
-.modal__button-calendar:active path{
-  fill: $blue;
+  &:hover path{
+    fill: $black;
+  }
+  &:active path{
+    fill: $blue;
+  }
 }
 
 .modal__input-amount {
   width: 36px;
   padding: 6px 39px;
-  border: 2px solid $light-beige;
-  background-color: $light-beige;
-  font-family: $ptsans;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 700;
   text-align: center;
-  &:hover {
-    background-color: $grey;
-    border-color: $grey;
-  }
-  &:focus {
-    background-color: $white;
-    border-color: $extra-light-grey;
-    outline: none;
-  }
 }
 
 .modal__button-plus,
@@ -143,15 +129,22 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  top: 0;
+  &:hover path,
+  &:hover rect {
+    fill: $black;
+  }
+  &:active path,
+  &:active rect {
+    fill: $blue;
+  }
 }
 
 .modal__button-minus {
-  top: 0;
   right: 75px;
 }
 
 .modal__button-plus {
-  top: 0;
   right: 0;
 }
 
@@ -162,17 +155,6 @@
 .modal__button-plus > .modal__button-img {
   margin-top: 4px;
 }
-
-.modal__button-plus:hover path,
-.modal__button-minus:hover rect {
-  fill: $black;
-}
-
-.modal__button-plus:active path,
-.modal__button-minus:active rect {
-  fill: $blue;
-}
-
 
 .modal__form-button {
   font-family: $ptsans;
