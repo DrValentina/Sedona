@@ -437,6 +437,12 @@ template {
   border-top: 4px solid #81b3d2;
   cursor: pointer;
 }
+.header__menu-button--open:hover {
+  opacity: 0.6;
+}
+.header__menu-button--open:active {
+  opacity: 0.3;
+}
 
 .header__menu-button--open::after,
 .header__menu-button--open::before {
@@ -456,14 +462,6 @@ template {
   top: 14px;
 }
 
-.header__menu-button--open:hover {
-  opacity: 0.6;
-}
-
-.header__menu-button--open:active {
-  opacity: 0.3;
-}
-
 .header__menu-button--close {
   position: absolute;
   width: 22px;
@@ -474,6 +472,12 @@ template {
   cursor: pointer;
   border: none;
   z-index: 2;
+}
+.header__menu-button--close:hover {
+  opacity: 0.6;
+}
+.header__menu-button--close:active {
+  opacity: 0.3;
 }
 
 .header__menu-button--close::after,
@@ -493,20 +497,14 @@ template {
   transform: rotate(315deg);
 }
 
-.header__menu-button--close:hover {
-  opacity: 0.6;
-}
-
-.header__menu-button--close:active {
-  opacity: 0.3;
-}
-
 .header__nav {
   position: absolute;
+  z-index: 3;
 }
 @media (min-width: 768px) {
   .header__nav {
     position: relative;
+    z-index: 1;
   }
 }
 
@@ -553,7 +551,6 @@ template {
     padding: 16px 0;
   }
 }
-
 @media (min-width: 768px) {
   .nav__item:nth-child(2) {
     margin-right: 40px;
@@ -564,7 +561,6 @@ template {
     margin-right: 80px;
   }
 }
-
 @media (min-width: 768px) {
   .nav__item:nth-child(3) {
     margin-left: 40px;
@@ -617,7 +613,6 @@ template {
     align-items: center;
   }
 }
-
 .nav__item-link:hover {
   background-color: #669ec0;
 }
@@ -627,7 +622,6 @@ template {
     background-color: inherit;
   }
 }
-
 .nav__item-link:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #669ec0;
@@ -675,12 +669,10 @@ template {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
-  text-align: center;
   color: #000000;
   margin: 0;
   padding: 0;
 }
-
 .footer__contact-text:first-child {
   margin-bottom: 10px;
 }
@@ -713,7 +705,6 @@ template {
 .footer__social-item {
   margin-right: 5px;
 }
-
 .footer__social-item:last-child {
   margin-right: 0;
 }
@@ -754,7 +745,6 @@ template {
 .footer__copyright-text {
   align-self: center;
   margin-right: 15px;
-  font-size: 14px;
   line-height: 26px;
 }
 

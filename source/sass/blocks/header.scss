@@ -38,6 +38,12 @@
   border: none;
   border-top: 4px solid $blue;
   cursor: pointer;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .header__menu-button--open::after,
@@ -58,14 +64,6 @@
   top: 14px;
 }
 
-.header__menu-button--open:hover {
-  opacity: 0.6;
-}
-
-.header__menu-button--open:active {
-  opacity: 0.3;
-}
-
 .header__menu-button--close {
   position: absolute;
   width: 22px;
@@ -76,6 +74,12 @@
   cursor: pointer;
   border: none;
   z-index: 2;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .header__menu-button--close::after,
@@ -95,17 +99,11 @@
   transform: rotate(315deg);
 }
 
-.header__menu-button--close:hover {
-  opacity: 0.6;
-}
-
-.header__menu-button--close:active {
-  opacity: 0.3;
-}
-
 .header__nav {
   position: absolute;
+  z-index: 3;
   @media(min-width: $tablet-width) {
     position: relative;
+    z-index: 1;
   }
 }
