@@ -36,10 +36,7 @@
 }
 
 .error-pop-up__text {
-  font-size: 14px;
   line-height: 24px;
-  font-weight: 400;
-  color: $dark-grey;
   margin-bottom: 22px;
   @media(min-width: $tablet-width) {
     margin: 0 auto;

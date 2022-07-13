@@ -76,10 +76,9 @@
   @media(min-width: $tablet-width) {
     padding: 0;
   }
-}
-
-.form-review__item:last-child {
-  margin-bottom: 5px;
+  &:last-child {
+    margin-bottom: 5px;
+  }
 }
 
 .form-review__label {
@@ -125,10 +124,7 @@
 }
 
 .form-review__label--text {
-  font-size: 14px;
   line-height: 26px;
-  font-weight: 400;
-  color: $dark-grey;
   margin-right: 13px;
   align-self: center;
   text-align: left;
@@ -200,65 +196,50 @@
 .form-review__label--tel {
   position: relative;
   margin-right: 0;
-}
-
-.form-review__label--tel::before {
-  content: "";
-  position: absolute;
-  background-color: $form-svg-grey;
-  background-image: url("../img/svg/phone.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 58px;
-  height: 60px;
-  right: 0;
-  top: 26px;
-  @media(min-width: $tablet-width) {
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $form-svg-grey;
+    background-image: url("../img/svg/phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 58px;
+    height: 60px;
     right: 0;
-  }
-  @media(min-width: $desktop-width) {
-    top: 0;
-  }
-}
-
-.form-review__input--text-tel {
-  display: block;
-  width: 258px;
-  @media(min-width: $tablet-width) {
-    width: 626px;
-  }
-  @media(min-width: $desktop-width) {
-    display: inline;
-    width: 272px;
-    margin-left: 18px;
+    top: 26px;
+    @media(min-width: $tablet-width) {
+      right: 0;
+    }
+    @media(min-width: $desktop-width) {
+      top: 0;
+    }
   }
 }
 
 .form-review__label--mail {
   position: relative;
   margin-right: 0;
-}
-
-.form-review__label--mail::before {
-  content: "";
-  position: absolute;
-  background-color: $form-svg-grey;
-  background-image: url("../img/svg/mail.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 58px;
-  height: 60px;
-  right: 0;
-  top: 26px;
-  @media(min-width: $tablet-width) {
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $form-svg-grey;
+    background-image: url("../img/svg/mail.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 58px;
+    height: 60px;
     right: 0;
-  }
-  @media(min-width: $desktop-width) {
-    top: 0;
+    top: 26px;
+    @media(min-width: $tablet-width) {
+      right: 0;
+    }
+    @media(min-width: $desktop-width) {
+      top: 0;
+    }
   }
 }
 
-.form-review__input--text-mail {
+.form-review__input--text-contact {
   display: block;
   width: 258px;
   @media(min-width: $tablet-width) {
@@ -301,12 +282,11 @@
   @media(min-width: $tablet-width) {
     margin-bottom: 52px;
   }
-}
-
-.form-review__item--radio:last-child {
-  margin-bottom: 15px;
-  @media(min-width: $tablet-width) {
-    margin-bottom: 0;
+  &:last-child {
+    margin-bottom: 15px;
+    @media(min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -389,12 +369,11 @@
     align-items: center;
     margin: 0 auto;
   }
-}
-
-.form-review__item--checkbox:not(:last-child) {
-  margin-bottom: 40px;
-  @media(min-width: $tablet-width) {
-    margin-bottom: 0;
+  &:not(:last-child) {
+    margin-bottom: 40px;
+    @media(min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -474,20 +453,17 @@
   @media(min-width: $desktop-width) {
     width: 918px;
   }
-}
-
-.form-review__textarea:hover {
-  background-color: $extra-light-grey;
-}
-
-.form-review__textarea:active,
-.form-review__textarea:focus {
-  background-color: $white;
-  outline-color: $extra-light-grey;
-}
-
-.form-review__textarea::placeholder {
-  color: $black;
+  &:hover {
+    background-color: $extra-light-grey;
+  }
+  &:active,
+  &:focus {
+    background-color: $white;
+    outline-color: $extra-light-grey;
+  }
+  &::placeholder {
+    color: $black;
+  }
 }
 
 //Form footer
@@ -534,23 +510,19 @@
     padding: 18px 140px;
     margin: 0;
   }
-}
-
-.form-review__button:hover {
-  background-color: $dark-blue;
-}
-
-.form-review__button:active {
-  background-color: $extra-dark-blue;
-  color: $white-transparent;
-}
-
-.form-review__button:disabled {
-  background-color: $extra-light-grey;
+  &:hover {
+    background-color: $dark-blue;
+  }
+  &:active {
+    background-color: $extra-dark-blue;
+    color: $white-transparent;
+  }
+  &:disabled {
+    background-color: $extra-light-grey;
+  }
 }
 
 .form-review__note {
-  text-align: center;
   margin-bottom: 0;
   @media(min-width: $tablet-width) {
     align-self: center;

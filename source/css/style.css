@@ -2098,7 +2098,6 @@ template {
     padding: 0;
   }
 }
-
 .form-review__item:last-child {
   margin-bottom: 5px;
 }
@@ -2146,10 +2145,7 @@ template {
 }
 
 .form-review__label--text {
-  font-size: 14px;
   line-height: 26px;
-  font-weight: 400;
-  color: #333333;
   margin-right: 13px;
   align-self: center;
   text-align: left;
@@ -2222,7 +2218,6 @@ template {
   position: relative;
   margin-right: 0;
 }
-
 .form-review__label--tel::before {
   content: "";
   position: absolute;
@@ -2246,28 +2241,10 @@ template {
   }
 }
 
-.form-review__input--text-tel {
-  display: block;
-  width: 258px;
-}
-@media (min-width: 768px) {
-  .form-review__input--text-tel {
-    width: 626px;
-  }
-}
-@media (min-width: 1200px) {
-  .form-review__input--text-tel {
-    display: inline;
-    width: 272px;
-    margin-left: 18px;
-  }
-}
-
 .form-review__label--mail {
   position: relative;
   margin-right: 0;
 }
-
 .form-review__label--mail::before {
   content: "";
   position: absolute;
@@ -2291,17 +2268,17 @@ template {
   }
 }
 
-.form-review__input--text-mail {
+.form-review__input--text-contact {
   display: block;
   width: 258px;
 }
 @media (min-width: 768px) {
-  .form-review__input--text-mail {
+  .form-review__input--text-contact {
     width: 626px;
   }
 }
 @media (min-width: 1200px) {
-  .form-review__input--text-mail {
+  .form-review__input--text-contact {
     display: inline;
     width: 272px;
     margin-left: 18px;
@@ -2343,7 +2320,6 @@ template {
     margin-bottom: 52px;
   }
 }
-
 .form-review__item--radio:last-child {
   margin-bottom: 15px;
 }
@@ -2439,7 +2415,6 @@ template {
     margin: 0 auto;
   }
 }
-
 .form-review__item--checkbox:not(:last-child) {
   margin-bottom: 40px;
 }
@@ -2529,17 +2504,13 @@ template {
     width: 918px;
   }
 }
-
 .form-review__textarea:hover {
   background-color: #e5e5e5;
 }
-
-.form-review__textarea:active,
-.form-review__textarea:focus {
+.form-review__textarea:active, .form-review__textarea:focus {
   background-color: #ffffff;
   outline-color: #e5e5e5;
 }
-
 .form-review__textarea::placeholder {
   color: #000000;
 }
@@ -2595,22 +2566,18 @@ template {
     margin: 0;
   }
 }
-
 .form-review__button:hover {
   background-color: #669ec0;
 }
-
 .form-review__button:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
 }
-
 .form-review__button:disabled {
   background-color: #e5e5e5;
 }
 
 .form-review__note {
-  text-align: center;
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
@@ -2663,10 +2630,7 @@ template {
 }
 
 .error-pop-up__text {
-  font-size: 14px;
   line-height: 24px;
-  font-weight: 400;
-  color: #333333;
   margin-bottom: 22px;
 }
 @media (min-width: 768px) {
@@ -2753,12 +2717,9 @@ template {
 
 .right-pop-up__text {
   max-width: 240px;
-  font-size: 14px;
   line-height: 24px;
-  font-weight: 400;
   margin: 0 auto;
   margin-bottom: 50px;
-  color: #333333;
 }
 @media (min-width: 768px) {
   .right-pop-up__text {

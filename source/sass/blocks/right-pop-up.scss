@@ -40,12 +40,9 @@
 
 .right-pop-up__text {
   max-width: 240px;
-  font-size: 14px;
   line-height: 24px;
-  font-weight: 400;
   margin: 0 auto;
   margin-bottom: 50px;
-  color: $dark-grey;
   @media(min-width: $tablet-width) {
     max-width: 400px;
     margin-bottom: 80px;
