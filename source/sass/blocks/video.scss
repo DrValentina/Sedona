@@ -170,27 +170,25 @@
   padding: 0;
   align-self: center;
   cursor: pointer;
+  &:hover path {
+    fill: $dark-grey;
+    @media(min-width: $tablet-width) {
+      fill: $white;
+      opacity: 0.6;
+    }
+  }
+  &:active path {
+    fill: $dark-grey;
+    opacity: 0.3;
+    @media(min-width: $tablet-width) {
+      fill: $white;
+      opacity: 0.3;
+    }
+  }
 }
 
 .video__button path {
   @media(min-width: $tablet-width) {
     fill: $white;
-  }
-}
-
-.video__button:hover path {
-  fill: $dark-grey;
-  @media(min-width: $tablet-width) {
-    fill: $white;
-    opacity: 0.6;
-  }
-}
-
-.video__button:active path {
-  fill: $dark-grey;
-  opacity: 0.3;
-  @media(min-width: $tablet-width) {
-    fill: $white;
-    opacity: 0.3;
   }
 }
