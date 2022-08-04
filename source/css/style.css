@@ -2178,6 +2178,10 @@ template {
   color: #000000;
 }
 
+.form-review__input--text:invalid {
+  border-color: red;
+}
+
 @media (min-width: 768px) {
   .form-review__contact {
     width: 100%;

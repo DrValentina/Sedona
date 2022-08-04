@@ -56,21 +56,21 @@
             <p class="section-header__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
 
-          <form class="reviews__form" action="index.html" method="post">
+          <form class="reviews__form" method="post">
             <fieldset class="reviews__form-review form-review form-review__full-name">
               <h2 class="form-review__title">Представьтесь:</h2>
               <ul class="form-review__list form-review__list--full-name">
                 <li class="form-review__item">
                   <label class="form-review__label--text" for="name">Имя*:</label>
-                  <input class="form-review__input--text form-review__input--full-name" id="name" type="text" name="name" placeholder="Петр">
+                  <input class="form-review__input--text form-review__input--full-name" id="name" type="text" name="name" placeholder="Петр" required>
                 </li>
                 <li class="form-review__item">
                   <label class="form-review__label--text" for="surname">Фамилия*:</label>
-                  <input class="form-review__input--text form-review__input--full-name" id="surname" type="text" name="surname" placeholder="Иванов">
+                  <input class="form-review__input--text form-review__input--full-name" id="surname" type="text" name="surname" placeholder="Иванов" required>
                 </li>
                 <li class="form-review__item">
                   <label class="form-review__label--text" for="patronymic">Отчество*:</label>
-                  <input class="form-review__input--text form-review__input--full-name" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
+                  <input class="form-review__input--text form-review__input--full-name" id="patronymic" type="text" name="patronymic" placeholder="Александрович" required>
                 </li>
               </ul>
             </fieldset>
@@ -80,12 +80,12 @@
               <ul class="form-review__list form-review__list--contact">
                 <li class="form-review__item form-review__item--contact">
                   <label class="form-review__label--text form-review__label--tel" for="tel">Контактный телефон*:
-                    <input class="form-review__input--text form-review__input--text-contact" id="tel" type="tel" name="tel" placeholder="Введите телефон">
+                    <input class="form-review__input--text form-review__input--text-contact" id="tel" type="tel" name="tel" placeholder="Введите телефон" required>
                   </label>
                 </li>
                 <li class="form-review__item form-review__item--contact">
                   <label class="form-review__label--text form-review__label--mail" for="mail">Электронная почта*:
-                    <input class="form-review__input--text form-review__input--text-contact" id="mail" type="email" name="mail" placeholder="Введите e-mail">
+                    <input class="form-review__input--text form-review__input--text-contact" id="mail" type="email" name="mail" placeholder="Введите e-mail" required>
                   </label>
                 </li>
               </ul>
@@ -221,5 +221,6 @@
       </footer>
     </div>
     <script src="script/menu.js"></script>
+    <script src="script/pop-up.js"></script>
   </body>
 </html>
