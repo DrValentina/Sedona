@@ -191,6 +191,12 @@
   align-self: center;
   margin: 0;
   padding: 0;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .gallery__item-like--button path {
@@ -198,18 +204,10 @@
     fill: $white;
     opacity: 1;
   }
-  &:hover path {
-    opacity: 0.6;
-  }
-  &:active path {
-    opacity: 1;
-    @media(min-width: $desktop-width) {
-      opacity: 0.3;
-    }
-  }
 }
 
 .gallery__item-like--counter {
+  width: 30px;
   line-height: 24px;
   font-weight: 700;
   margin: 0;
@@ -217,6 +215,8 @@
   padding: 0;
   align-self: flex-end;
   color: $black;
+  border: none;
+  background-color: transparent;
   @media(min-width: $desktop-width) {
     color: $white;
   }

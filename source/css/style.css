@@ -1697,6 +1697,12 @@ template {
   margin: 0;
   padding: 0;
 }
+.gallery__item-like--button:hover {
+  opacity: 0.6;
+}
+.gallery__item-like--button:active {
+  opacity: 0.3;
+}
 
 @media (min-width: 1200px) {
   .gallery__item-like--button path {
@@ -1704,19 +1710,9 @@ template {
     opacity: 1;
   }
 }
-.gallery__item-like--button path:hover path {
-  opacity: 0.6;
-}
-.gallery__item-like--button path:active path {
-  opacity: 1;
-}
-@media (min-width: 1200px) {
-  .gallery__item-like--button path:active path {
-    opacity: 0.3;
-  }
-}
 
 .gallery__item-like--counter {
+  width: 30px;
   line-height: 24px;
   font-weight: 700;
   margin: 0;
@@ -1724,6 +1720,8 @@ template {
   padding: 0;
   align-self: flex-end;
   color: #000000;
+  border: none;
+  background-color: transparent;
 }
 @media (min-width: 1200px) {
   .gallery__item-like--counter {
