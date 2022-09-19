@@ -139,16 +139,18 @@
   border: none;
   align-items: center;
   vertical-align: middle;
+  &:hover {
+    background-color: $extra-light-grey;
+  }
+  &:active,
+  &:focus {
+    background-color: $white;
+    outline-color: $extra-light-grey;
+  }
 }
 
-.form-review__input--text:hover {
-  background-color: $extra-light-grey;
-}
-
-.form-review__input--text:active,
-.form-review__input--text:focus {
-  background-color: $white;
-  outline-color: $extra-light-grey;
+.form-review__input--text-error {
+  border: 1px solid #ff0000;
 }
 
 .form-review__input--full-name {
@@ -165,8 +167,11 @@
   color: $black;
 }
 
-.form-review__input--text:invalid {
-  border-color: red;
+.form-review__input--text::-ms-value {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $black;
 }
 
 //Contact
