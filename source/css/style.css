@@ -1018,12 +1018,7 @@ template {
 @media (min-width: 768px) {
   .reasons-block__text {
     margin: 0 32px;
-    margin-bottom: 36px;
-  }
-}
-@media (min-width: 1200px) {
-  .reasons-block__text {
-    margin-bottom: 62px;
+    margin-bottom: 28px;
   }
 }
 
@@ -1603,7 +1598,7 @@ template {
     flex-direction: row;
     justify-content: space-between;
     background-color: #f2f2f2;
-    padding: 18px 20px;
+    padding: 18px 16px;
     padding-top: 22px;
     align-items: center;
   }
@@ -1712,7 +1707,7 @@ template {
 }
 
 .gallery__item-like--counter {
-  width: 30px;
+  width: 35px;
   line-height: 24px;
   font-weight: 700;
   margin: 0;
@@ -2051,7 +2046,7 @@ template {
 @media (min-width: 1200px) {
   .form-review__title--line::before {
     width: 960px;
-    left: -325px;
+    left: -280px;
   }
 }
 
@@ -2118,7 +2113,7 @@ template {
     justify-content: flex-start;
     margin: 0;
     padding: 0;
-    padding-left: 80px;
+    padding-left: 65px;
   }
 }
 
@@ -2225,17 +2220,12 @@ template {
   background-position: center;
   width: 58px;
   height: 60px;
-  right: 0;
-  top: 26px;
-}
-@media (min-width: 768px) {
-  .form-review__label--tel::before {
-    right: 0;
-  }
+  right: 1px;
+  top: 27px;
 }
 @media (min-width: 1200px) {
   .form-review__label--tel::before {
-    top: 0;
+    top: 1px;
   }
 }
 
@@ -2252,17 +2242,12 @@ template {
   background-position: center;
   width: 58px;
   height: 60px;
-  right: 0;
-  top: 26px;
-}
-@media (min-width: 768px) {
-  .form-review__label--mail::before {
-    right: 0;
-  }
+  right: 1px;
+  top: 27px;
 }
 @media (min-width: 1200px) {
   .form-review__label--mail::before {
-    top: 0;
+    top: 1px;
   }
 }
 

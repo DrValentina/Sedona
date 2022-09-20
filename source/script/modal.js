@@ -19,7 +19,7 @@ window.addEventListener("load", function() {
       };
     });
     buttonPlus[i].addEventListener("click", function() {
-      if(inputAmount[i].value < 8) {
+      if(inputAmount[i].value < 4) {
         inputAmount[i].value++;
       };
     });

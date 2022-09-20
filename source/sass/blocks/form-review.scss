@@ -45,7 +45,7 @@
     }
     @media(min-width: $desktop-width) {
       width: 960px;
-      left: -325px;
+      left: -280px;
     }
   }
 }
@@ -107,7 +107,7 @@
     justify-content: flex-start;
     margin: 0;
     padding: 0;
-    padding-left: 80px;
+    padding-left: 65px;
   }
 }
 
@@ -214,13 +214,10 @@
     background-position: center;
     width: 58px;
     height: 60px;
-    right: 0;
-    top: 26px;
-    @media(min-width: $tablet-width) {
-      right: 0;
-    }
+    right: 1px;
+    top: 27px;
     @media(min-width: $desktop-width) {
-      top: 0;
+      top: 1px;
     }
   }
 }
@@ -237,13 +234,10 @@
     background-position: center;
     width: 58px;
     height: 60px;
-    right: 0;
-    top: 26px;
-    @media(min-width: $tablet-width) {
-      right: 0;
-    }
+    right: 1px;
+    top: 27px;
     @media(min-width: $desktop-width) {
-      top: 0;
+      top: 1px;
     }
   }
 }
